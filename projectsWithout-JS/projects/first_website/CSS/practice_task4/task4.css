@@ -1,0 +1,10 @@
+div{
+    float:left;
+    border: 5px solid rgb(197, 170, 17);
+    padding: 10px;
+    margin: 10px 20px;
+    width: 75px;
+}
+h3{
+    color:brown;
+}

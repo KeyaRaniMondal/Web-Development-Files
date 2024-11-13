@@ -1,0 +1,87 @@
+
+.port {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.header{
+    background-image: url('../image/developer\ \(1\).png'), url('../image/header_bg.png');
+   background-repeat: no-repeat;
+  background-position: top left , bottom right;
+}
+/* nav tag decoration */
+nav{
+    display: flex;
+    /* to set all itensms in line */
+    align-items: center;
+    /* helps to give space between contents */
+    justify-content: space-between;
+    margin: 100px 200px;
+}
+.btn{
+    background-color:#FD6E0A ;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 18px 35px;
+    border-radius: 5px;
+    border: none;
+}
+.text-primary{
+    color: #FD6E0A;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 51px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color:#474747;
+    font-size: 20px;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+.banner-greetings{
+    margin-top: -100px;
+font-size: larger;
+}
+.banner-title{
+
+}
+/* banner decoration */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+.banner-content{
+   max-width: 585px;
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
+}
+.secondary-bg{
+    background-color: #FFF8F3;
+}
+/* about section */
+.about{
+    border-radius: 30px;
+    padding: 130px 150px;
+    text-align: center;
+    margin-top: 130px;
+}
+/* main styles */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Basic CSS</title>
+    <!-- Internal or embaded style-->
+    <h1>To style all items for specific tag</h1>
+    <style>
+        li {
+            color: coral;
+        }
+
+        p {
+            background-color: cyan;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline style:
+     Needs style rule and value separated by colon
+     after each style you need to use semi-colon -->
+    <h3 style="color: chocolate;">Learning basic CSS</h3>
+    <h4 style="background-color: rgb(111, 163, 123);width: 500px;">Inline style</h4>
+    <p>CSS means: Cascading Style Sheet</p>
+    <ul>
+        <li>Inline CSS</li>
+        <li>Internal or Embedded CSS</li>
+        <li>External CSS</li>
+    </ul>
+</body>
+
+</html>
+
+--------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Basic CSS</title>
+    <h1>To style selective not all items for specific task</h1>
+    <style>
+        * {
+            margin: 1;
+        }
+
+        #emb {
+            font-size: larger;
+        }
+
+        #paragraph {
+            text-align: center;
+        }
+
+        .cla {
+            font-weight: bolder;
+        }
+
+        /* attribute selctor */
+        /* input {
+            color: blueviolet;
+        } */
+        input[type="password"] {
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3 style="color: chocolate;">Learning basic CSS</h3>
+    <h4 style="background-color: rgb(111, 163, 123);width: 500px;">Inline style</h4>
+    <p id="paragraph">CSS means: Cascading Style Sheet</p>
+    <p class="cla">To access class you need to use .</p>
+    <ul>
+        <li>Inline CSS</li>
+        <li id="emb">Internal or Embedded CSS</li>
+        <li>External CSS</li>
+    </ul>
+    <form action="">
+        <input type="text"><br><br>
+        <input type="password">
+    </form>
+</body>
+
+</html>

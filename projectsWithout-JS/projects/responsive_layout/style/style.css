@@ -1,0 +1,22 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+.row1{
+    height: 400px;
+}
+
+.row{
+height: 400px;
+justify-content: space-between;
+gap: 5px;
+margin-bottom: 5px;
+/* width: 33%; */
+display: flex;
+}
+.vertical-collage img{
+    height: 200px;
+}
+section{
+    display: flex;
+}

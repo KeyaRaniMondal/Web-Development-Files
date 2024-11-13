@@ -1,0 +1,30 @@
+/* nav>ul{
+    display: flex;
+}
+li{
+list-style: none;
+margin:5px;
+border: 1px solid rgb(59, 118, 118);
+background-color: rgb(183, 245, 245);
+padding: 2px 5px 7px 10px;
+width: 500px;
+}
+
+body{
+    background-color: rgb(251, 232, 208);
+} */
+
+.parent{
+    padding: 25px;
+    background-color: blanchedalmond;
+    display: flex;
+    gap: 30px;
+    justify-content:space-evenly;
+}
+
+.child{
+    border:2px solid rgb(15, 158, 160);
+    background: rgb(178, 228, 229);
+    padding: 20px;
+    font-size: 28px;
+}

@@ -1,0 +1,14 @@
+#para{
+  color: rgb(130, 16, 179);
+  font-style:italic;
+}
+body{
+    text-align:justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    font-size:large
+}
+*{
+    background-color:rgb(189, 250, 230)
+}

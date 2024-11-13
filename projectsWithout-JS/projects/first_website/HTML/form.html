@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Form using html</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        h4{
+            background-color: rgb(135, 203, 222);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="name">Your Name :
+            <input id="name" type="text" placeholder="Your Name">
+        </label>
+        <lable for="email">Your Email :
+            <input id="email" type="email" placeholder="Your Email">
+        </lable>
+        <br><br>
+        <h4>Fieldset tag:<br>The fieldset tag is used to group related elements in a form. The fieldset tag draws a box around the related elements.</h4>
+        <fieldset>
+            <h4>Legend element:<br><br>the legend element is used in HTML forms to provide a caption or a title for the associated fieldset element.</h4>
+            <legend>Pick one sweet for desert :</legend>
+            <h3>Before using name it would select both buttons</h3>
+            <label for="Rosomalai">
+                <!-- using radio you can seklect only one option if it has same name -->
+                <input type="radio" name="" id="rosomalai">Rosomalai
+            </label>
+            <label for="kalojam">
+                <input type="radio" name="" id="kalojam">Kalojam
+            </label>
+            <h3>After using same name field it would select only one button</h3>
+            <label for="Rosomalai">
+                <input type="radio" name="sweet" id="rosomalai">Rosomalai
+            </label>
+            <label for="kalojam">
+                <input type="radio" name="sweet" id="kalojam">Kalojam
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Pic your favourite fruits</legend>
+            <label for="mango">
+                <!-- using checkbox you can select multiple options -->
+                <input type="checkbox" name="fruits" id="mango">Mango
+            </label>
+            <label for="lychi">
+                <input type="checkbox" name="fruits" id="lychi">Lychi
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Special instrustctions</legend>
+            <textarea name="" id="" cols="30" rows="2"></textarea>
+        </fieldset>
+        <!-- Reset button will reset all selected values -->
+        <input type="reset" value="Reset">
+        <!-- <button>Submit</button> -->
+         <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

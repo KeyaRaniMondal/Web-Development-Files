@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box.1</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            background-color: blueviolet;
+            border-radius: 8px;
+        }
+
+        /* this means it could take max width of 576px.If we try to make it smaller than this then it will shift to column */
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise of flex-box</h1>
+    <div class="container">
+        <div class="box">
+            <h3>Flex 1 </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis nihil rerum tempore
+                accusantium ipsa, reiciendis qui sed voluptate voluptates magnam velit inventore quasi doloremque totam
+                corporis! In, cumque magni!</p>
+        </div>
+        <div class="box">
+            <h3>flex 2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat recusandae neque quas deleniti omnis
+                maxime, aliquam expedita minima distinctio voluptates suscipit repudiandae voluptatum, dolorem ducimus
+                non! Consequatur fugit vitae eius.</p>
+        </div>
+    </div>
+</body>
+
+</html>

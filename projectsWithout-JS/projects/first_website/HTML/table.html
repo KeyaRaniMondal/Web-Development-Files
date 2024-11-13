@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        /* border collaps helps to make separated boeders to single border */
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 2px solid;
+            padding: 5px 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="first.html">first</a></li>
+                <li><a href="form.html">form</a></li>
+                <li><a href="mount.html">mount</a></li>
+                <li><a href="table.html">table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Informations about table :</h2>
+        <ul>
+            <li>Table header = thead</li>
+            <li>Table body = tbody</li>
+            <li>Table header = thead</li>
+            <li>Table row = tr</li>
+            <li>Table data or cell = td</li>
+            <li>Table heading data = th</li>
+            <h3 style="background-color: cadetblue;width: 50%;">td*4 will provide 4 td</h3>
+        </ul>
+        <table>
+            <caption>Employee salary data</caption>
+            <theader>
+                <th>No.</th>
+                <th>Full name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </theader>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Microsoft</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steves Jobs</td>
+                    <td>Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Goggle</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zukarberg</td>
+                    <td>Facebook</td>
+                    <td>$1300</td>
+                </tr>
+    </main>
+    </tbody>
+    <tfoot>
+        <!-- colspan allows you to span a row or column across multiple cells. This means that instead of having multiple columns, the cells will merge and the content will span multiple columns -->
+        <td colspan="4">Total Employee = 4</td>
+    </tfoot>
+    </table>
+</body>
+
+</html>
