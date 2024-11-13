@@ -1,0 +1,48 @@
+[
+    {
+      "Id": 1,
+      "cover_title": "Introduction to Machine Learning",
+      "author": "Alice Johnson",
+      "author_img": "https://example.com/authors/alice.jpg",
+      "posted_date": "2024-09-15",
+      "reading_time": 10,
+      "hashtag": ["#MachineLearning", "#AI", "#DataScience"]
+    },
+    {
+      "Id": 2,
+      "cover_title": "JavaScript Best Practices",
+      "author": "John Doe",
+      "author_img": "https://example.com/authors/john.jpg",
+      "posted_date": "2024-10-01",
+      "reading_time": 8,
+      "hashtag": ["#JavaScript", "#WebDevelopment", "#Coding"]
+    },
+    {
+      "Id": 3,
+      "cover_title": "Understanding C++ for Beginners",
+      "author": "Emily Zhang",
+      "author_img": "https://example.com/authors/emily.jpg",
+      "posted_date": "2024-08-22",
+      "reading_time": 12,
+      "hashtag": ["#C++", "#Programming", "#SoftwareDevelopment"]
+    },
+    {
+      "Id": 4,
+      "cover_title": "The Future of Cloud Computing",
+      "author": "Michael Brown",
+      "author_img": "https://example.com/authors/michael.jpg",
+      "posted_date": "2024-09-05",
+      "reading_time": 15,
+      "hashtag": ["#CloudComputing", "#Technology", "#FutureTrends"]
+    },
+    {
+      "Id": 5,
+      "cover_title": "Building Responsive Websites",
+      "author": "Sara Lee",
+      "author_img": "https://example.com/authors/sara.jpg",
+      "posted_date": "2024-10-10",
+      "reading_time": 7,
+      "hashtag": ["#WebDesign", "#Responsive", "#CSS", "#HTML"]
+    }
+  ]
+  
