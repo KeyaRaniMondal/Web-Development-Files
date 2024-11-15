@@ -6,3 +6,4 @@
 
 # create components folder for storing all components.
 - 1. Header.jsx
+- 2. To get current data and time I have used Moment.js in header component
