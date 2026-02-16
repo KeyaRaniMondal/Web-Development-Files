@@ -1,9 +1,9 @@
 fetch("https://fakestoreapi.com/products")
     .then(res => res.json())
     .then(data => {
-        console.log(data);
+        // console.log(data);
         const topProducts = data.sort((a, b) => b.rating.rate - a.rating.rate).slice(0, 3)
-        console.log(topProducts);
+        // console.log(topProducts);
         const container = document.getElementById("trendingCard")
         topProducts.forEach(product => {
             const card = document.createElement("div")
@@ -30,7 +30,6 @@ visibility
 shopping_cart
 </span>Buy Now</button>
 </div>
-
     </div>
   </div>
 </div>

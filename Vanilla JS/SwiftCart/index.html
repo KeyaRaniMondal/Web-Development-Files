@@ -26,20 +26,20 @@
                         </div>
                         <ul tabindex="-1"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li class="hover:text-blue-700 font-semibold"><a>Home</a></li>
-                            <li class="hover:text-blue-700 font-semibold"><a>Products</a></li>
-                            <li class="hover:text-blue-700 font-semibold"><a>About</a></li>
-                            <li class="hover:text-blue-700 font-semibold"><a>Contact</a></li>
+                            <li class="hover:text-blue-700 font-semibold"><a href="Home">Home</a></li>
+                            <li class="hover:text-blue-700 font-semibold"><a href="Products">Products</a></li>
+                            <li class="hover:text-blue-700 font-semibold"><a href="About">About</a></li>
+                            <li class="hover:text-blue-700 font-semibold"><a href="Contact">Contact</a></li>
                         </ul>
                     </div>
                     <a class="font-semibold text-xl text-blue-700">SwiftCart</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li class="hover:text-blue-700 font-semibold"><a>Home</a></li>
-                        <li class="hover:text-blue-700 font-semibold"><a>Products</a></li>
-                        <li class="hover:text-blue-700 font-semibold"><a>About</a></li>
-                        <li class="hover:text-blue-700 font-semibold"><a>Contact</a></li>
+                        <li class="hover:text-blue-700 font-semibold"><a href="index.html">Home</a></li>
+                        <li class="hover:text-blue-700 font-semibold"><a href="products.html">Products</a></li>
+                        <li class="hover:text-blue-700 font-semibold"><a href="About">About</a></li>
+                        <li class="hover:text-blue-700 font-semibold"><a href="Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
@@ -108,11 +108,48 @@
             </div>
         </div>
     </span>
+
+    <!-- to show trending products -->
     <div>
         <h2 class="text-3xl font-bold text-center my-20">Trending Now</h2>
         <div id="trendingCard" class="flex justify-around"></div>
     </div>
-    
+
+        <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <nav>
+    <h6 class="footer-title">Services</h6>
+    <a class="link link-hover">Branding</a>
+    <a class="link link-hover">Design</a>
+    <a class="link link-hover">Marketing</a>
+    <a class="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Company</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+  <form>
+    <h6 class="footer-title">Newsletter</h6>
+    <fieldset class="w-80">
+      <label>Enter your email address</label>
+      <div class="join">
+        <input
+          type="text"
+          placeholder="username@site.com"
+          class="input input-bordered join-item" />
+        <button class="btn btn-primary join-item">Subscribe</button>
+      </div>
+    </fieldset>
+  </form>
+</footer>
     <script src="script.js"></script>
 </body>
 
