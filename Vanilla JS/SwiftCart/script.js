@@ -20,8 +20,7 @@ fetch("https://fakestoreapi.com/products")
                         <span class="font-semibold text-sm">${product.rating.rate} (${product.rating.count})</span>
                     </div>
                 </div>
-                <h3 class="card-title text-lg font-bold line-clamp-2">${product.title}</h3>
-                <p class="text-gray-600 text-sm line-clamp-2">${product.description}</p>
+                <h3 class="card-title text-lg line-clamp-2">${product.title}</h3>
                 <div class="flex items-center justify-between mt-4">
                     <span class="text-2xl font-bold text-gray-900">$${product.price.toFixed(2)}</span>
                 </div>

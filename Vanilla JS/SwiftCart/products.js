@@ -17,7 +17,7 @@ fetch('https://fakestoreapi.com/products/categories')
         
         //"All" button
         const allBtn = document.createElement("button")
-        allBtn.className = "btn btn-primary"
+        allBtn.className = "btn btn-primary rounded-full"
         allBtn.innerHTML = "All"
         allBtn.onclick = () => displayProducts(allProducts)
         categoryContainer.appendChild(allBtn)
@@ -25,7 +25,7 @@ fetch('https://fakestoreapi.com/products/categories')
         //category buttons
         data.forEach(category => {
             const btn = document.createElement("button")
-            btn.className = "btn btn-neutral btn-outline"
+            btn.className = "btn btn-neutral btn-outline rounded-full"
             btn.innerHTML = category
             btn.onclick = () => {
                 fetch(`https://fakestoreapi.com/products/category/${category}`)
