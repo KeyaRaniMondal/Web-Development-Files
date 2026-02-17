@@ -15,16 +15,18 @@ fetch('https://fakestoreapi.com/products/categories')
         console.log(data);
         const categoryContainer = document.getElementById("ProductCategory")
         
-        // Add "All" button
+        //"All" button
         const allBtn = document.createElement("button")
-        allBtn.innerHTML = `<button class="btn btn-primary">All</button>`
+        allBtn.className = "btn btn-primary"
+        allBtn.innerHTML = "All"
         allBtn.onclick = () => displayProducts(allProducts)
         categoryContainer.appendChild(allBtn)
         
-        // Add category buttons
+        //category buttons
         data.forEach(category => {
             const btn = document.createElement("button")
-            btn.innerHTML = `<button class="btn btn-neutral btn-outline">${category}</button>`
+            btn.className = "btn btn-neutral btn-outline"
+            btn.innerHTML = category
             btn.onclick = () => {
                 fetch(`https://fakestoreapi.com/products/category/${category}`)
                     .then(res => res.json())
@@ -67,11 +69,51 @@ function displayProducts(products) {
                     <span class="text-2xl font-bold text-gray-900">$${product.price.toFixed(2)}</span>
                 </div>
                 <div class="card-actions gap-2 mt-4">
-                    <button class="btn btn-ghost btn-sm flex-1">Details</button>
+                    <button class="btn btn-ghost btn-sm flex-1" onclick="showProductDetails(${product.id})">Details</button>
                     <button class="btn btn-primary btn-sm flex-1">Add</button>
                 </div>
             </div>
         `
         productsContainer.appendChild(card)
     })
+}
+
+
+// single product details
+
+function showProductDetails(id) {
+    fetch(`https://fakestoreapi.com/products/${id}`)
+        .then(res => res.json())
+        .then(data => {
+            const modal = document.createElement('dialog')
+            modal.className = 'modal'
+            modal.innerHTML = `
+                <div class="modal-box">
+                    <h3 class="text-lg font-bold">${data.title}</h3>
+                    <div class="py-4">
+                        <figure class="mb-4 flex justify-center">
+                            <img src="${data.image}" alt="${data.title}" class="h-48 object-contain"/>
+                        </figure>
+                        <p class="text-gray-600 mb-2">${data.description}</p>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-yellow-400">★</span>
+                            <span>${data.rating.rate} (${data.rating.count} reviews)</span>
+                        </div>
+                        <p class="text-2xl font-bold text-gray-900 mb-2">$${data.price.toFixed(2)}</p>
+                        <p class="text-sm text-gray-500">Category: ${data.category}</p>
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button class="btn">Close</button>
+                        </form>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                </form>
+            `
+            document.body.appendChild(modal)
+            modal.showModal()
+        })
 }
