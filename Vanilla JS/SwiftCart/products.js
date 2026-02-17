@@ -14,10 +14,12 @@ fetch('https://fakestoreapi.com/products/categories')
     .then(data => {
         console.log(data);
         const categoryContainer = document.getElementById("ProductCategory")
+        // make category container horizontally scrollable on small screens
+        categoryContainer.className = "flex gap-2 overflow-x-auto px-4"
         
         //"All" button
         const allBtn = document.createElement("button")
-        allBtn.className = "btn btn-primary rounded-full"
+        allBtn.className = "btn btn-primary rounded-full flex-shrink-0"
         allBtn.innerHTML = "All"
         allBtn.onclick = () => displayProducts(allProducts)
         categoryContainer.appendChild(allBtn)
@@ -25,7 +27,7 @@ fetch('https://fakestoreapi.com/products/categories')
         //category buttons
         data.forEach(category => {
             const btn = document.createElement("button")
-            btn.className = "btn btn-neutral btn-outline rounded-full"
+            btn.className = "btn btn-neutral btn-outline rounded-full flex-shrink-0"
             btn.innerHTML = category
             btn.onclick = () => {
                 fetch(`https://fakestoreapi.com/products/category/${category}`)
@@ -50,7 +52,7 @@ function displayProducts(products) {
     
     products.forEach(product => {
         const card = document.createElement("div")
-        card.className = "card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow w-72"
+        card.className = "card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow w-full sm:w-72 md:w-80 lg:w-72"
         card.innerHTML = `
             <figure class="h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img src="${product.image}" alt="${product.title}" class="h-full w-full object-contain p-4"/>
@@ -69,8 +71,12 @@ function displayProducts(products) {
                     <span class="text-2xl font-bold text-gray-900">$${product.price.toFixed(2)}</span>
                 </div>
                 <div class="card-actions gap-2 mt-4">
-                    <button class="btn btn-ghost btn-sm flex-1" onclick="showProductDetails(${product.id})">Details</button>
-                    <button class="btn btn-primary btn-sm flex-1">Add</button>
+                    <button class="btn btn-outline btn-sm flex-1" onclick="showProductDetails(${product.id})"><span class="material-symbols-outlined">
+visibility
+</span>Details</button>
+                    <button class="btn btn-primary btn-sm flex-1"><span class="material-symbols-outlined">
+shopping_cart
+</span>Add</button>
                 </div>
             </div>
         `

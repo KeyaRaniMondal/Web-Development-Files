@@ -7,7 +7,7 @@ fetch("https://fakestoreapi.com/products")
         const container = document.getElementById("trendingCard")
         topProducts.forEach(product => {
         const card = document.createElement("div")
-        card.className = "card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow w-72"
+        card.className = "card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow w-full sm:w-72 md:w-80 lg:w-72"
         card.innerHTML = `
             <figure class="h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img src="${product.image}" alt="${product.title}" class="h-full w-full object-contain p-4"/>
@@ -25,8 +25,12 @@ fetch("https://fakestoreapi.com/products")
                     <span class="text-2xl font-bold text-gray-900">$${product.price.toFixed(2)}</span>
                 </div>
                 <div class="card-actions gap-2 mt-4">
-                    <button class="btn btn-ghost btn-sm flex-1">Details</button>
-                    <button class="btn btn-primary btn-sm flex-1">Add</button>
+                    <button class="btn btn-outline btn-sm flex-1"><span class="material-symbols-outlined">
+visibility
+</span>Details</button>
+                    <button class="btn btn-primary btn-sm flex-1"><span class="material-symbols-outlined">
+shopping_cart
+</span>Add</button>
                 </div>
             </div>
         `
