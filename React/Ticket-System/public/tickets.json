@@ -1,0 +1,137 @@
+[
+  {
+    "id": "TCK-001",
+    "title": "Login authentication failure",
+    "description": "User unable to log in despite correct credentials. Error 401 returned.",
+    "customer": "Acme Corp",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01T09:15:00Z"
+  },
+  {
+    "id": "TCK-002",
+    "title": "Payment gateway timeout",
+    "description": "Transactions failing intermittently during checkout process.",
+    "customer": "Bright Solutions",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-03-01T11:40:00Z"
+  },
+  {
+    "id": "TCK-003",
+    "title": "UI misalignment on dashboard",
+    "description": "Widgets overlap on smaller screen resolutions.",
+    "customer": "NexaTech",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02T08:25:00Z"
+  },
+  {
+    "id": "TCK-004",
+    "title": "Email notifications not sent",
+    "description": "System fails to send email alerts after order confirmation.",
+    "customer": "Global Mart",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-02T10:05:00Z"
+  },
+  {
+    "id": "TCK-005",
+    "title": "Database performance degradation",
+    "description": "Slow query execution observed during peak hours.",
+    "customer": "FinCore Ltd",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-03-02T14:18:00Z"
+  },
+  {
+    "id": "TCK-006",
+    "title": "Password reset link expired",
+    "description": "Reset links expire immediately after generation.",
+    "customer": "Urban Retail",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-03-03T07:50:00Z"
+  },
+  {
+    "id": "TCK-007",
+    "title": "API returning incorrect data",
+    "description": "Product API returns mismatched pricing information.",
+    "customer": "Skyline Traders",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-03T09:12:00Z"
+  },
+  {
+    "id": "TCK-008",
+    "title": "File upload size limitation error",
+    "description": "Users unable to upload files larger than 5MB.",
+    "customer": "EduSmart",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-03T12:33:00Z"
+  },
+  {
+    "id": "TCK-009",
+    "title": "Session timeout too short",
+    "description": "Users logged out after 5 minutes of inactivity.",
+    "customer": "HealthBridge",
+    "priority": "Medium",
+    "status": "Closed",
+    "createdAt": "2026-03-03T15:21:00Z"
+  },
+  {
+    "id": "TCK-010",
+    "title": "Search functionality not filtering correctly",
+    "description": "Search results ignore applied category filters.",
+    "customer": "Prime Logistics",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-04T08:10:00Z"
+  },
+  {
+    "id": "TCK-011",
+    "title": "Mobile responsiveness issue",
+    "description": "Navigation menu not collapsing properly on mobile devices.",
+    "customer": "Trendify",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T09:45:00Z"
+  },
+  {
+    "id": "TCK-012",
+    "title": "Data export CSV format incorrect",
+    "description": "Exported CSV contains broken column alignment.",
+    "customer": "AgroPlus",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-03-04T10:20:00Z"
+  },
+  {
+    "id": "TCK-013",
+    "title": "Server CPU usage spike",
+    "description": "Unexpected CPU spike during batch processing.",
+    "customer": "CloudNet",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-03-04T11:05:00Z"
+  },
+  {
+    "id": "TCK-014",
+    "title": "Incorrect invoice calculation",
+    "description": "Tax calculation inconsistent with configured rules.",
+    "customer": "RetailPro",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T11:50:00Z"
+  },
+  {
+    "id": "TCK-015",
+    "title": "Broken image links on homepage",
+    "description": "Several product images fail to load due to 404 errors.",
+    "customer": "ShopEase",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2026-03-04T12:30:00Z"
+  }
+]
