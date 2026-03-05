@@ -6,14 +6,14 @@
 - JSX supports embedding JavaScript expressions inside markup using {}. This makes it simple to add dynamic values, conditional rendering, and loops directly within the UI code.
 
 2. What is the difference between State and Props?
-|                 State                    |                    Props                    |
-| ---------------------------------------- | ------------- ------------------------------|
-|Can be changed by the component itself.   | Cannot be changed by the receiving component; props are read-only. |
-| Facilitates communication within a 
-component.                                 | Facilitates communication between components (from parent to child). |
-|Changes in state trigger a re-render of 
-the component where the state is modified. | Changes in props cause a re-render of the child component that receives them, but the parent manages them.|
-|Managed by the component itself.          ||Managed by the parent component.|
+- |                 State                    |                    Props                    |
+- | ---------------------------------------- | ------------- ------------------------------|
+- |Can be changed by the component itself.   | Cannot be changed by the receiving component; props are read-only. |
+- | Facilitates communication within a 
+- component.                                 | Facilitates communication between components (from parent to child). |
+- |Changes in state trigger a re-render of 
+- the component where the state is modified. | Changes in props cause a re-render of the child component that receives them, but the parent manages them.|
+- |Managed by the component itself.          ||Managed by the parent component.|
 
 3. What is the useState hook, and how does it work?
 
