@@ -41,13 +41,13 @@ const TicketCard = () => {
 
 
     return (
-        <div className=' home flex justify-between'>
-            <div>
-                <h1>Customer Tickets</h1>
-                <div className='grid grid-cols-2 gap-5'>
+        <div className='home flex flex-col md:flex-row justify-between px-4 md:px-0 py-6'>
+            <div className="mb-4">
+                <h1 className="text-xl font-semibold text-center md:text-left">Customer Tickets</h1>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
                     {
                         tickets.map(tick => (
-                            <div key={tick.id} className={`card bg-base-100 w-96 shadow-sm cursor-pointer ${selectedTickets.find(t => t.id === tick.id) ? 'ring-2 ring-blue-400' : ''}`} onClick={() => handleSelectedTicket(tick)}>
+                            <div key={tick.id} className={`card bg-base-100 w-full sm:w-96 shadow-sm cursor-pointer ${selectedTickets.find(t => t.id === tick.id) ? 'ring-2 ring-blue-400' : ''}`} onClick={() => handleSelectedTicket(tick)}>
                                 <div className="card-body">
                                     <span className='flex justify-between'>
                                         <h2 className="card-title">{tick.title}</h2>
@@ -79,7 +79,7 @@ const TicketCard = () => {
                     }
                 </div>
             </div>
-            <div className='grid grid-rows-2'>
+            <div className='grid grid-rows-2 mt-6 md:mt-0'>
                 <Status_Resolved selectedTickets={selectedTickets} onRemove={handleRemoveTicket} removed={removed} />
             </div>
         </div>

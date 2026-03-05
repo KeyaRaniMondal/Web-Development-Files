@@ -26,10 +26,10 @@ const Banner = () => {
     }, []);
 
     return (
-        <div className="home flex justify-between gap-6 px-10 py-8">
+        <div className="home flex flex-col md:flex-row justify-between gap-6 px-4 md:px-10 py-8">
 
             {/* In Progress Card */}
-            <div className="relative w-1/2 h-[220px] rounded-2xl 
+            <div className="relative w-full md:w-1/2 h-52 md:h-[220px] rounded-2xl 
                             bg-gradient-to-br from-indigo-600  to-purple-500
                             text-white flex flex-col justify-center items-center 
                             overflow-hidden shadow-lg">
@@ -57,7 +57,7 @@ const Banner = () => {
             </div>
 
             {/* Resolved Card */}
-            <div className="relative w-1/2 h-[220px] rounded-2xl 
+            <div className="relative w-full md:w-1/2 h-52 md:h-[220px] rounded-2xl 
                             bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 
                             text-white flex flex-col justify-center items-center 
                             overflow-hidden shadow-lg">

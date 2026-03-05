@@ -28,7 +28,7 @@ const Navbar = () => {
       <li><a>Download</a></li>
       <li><a>Contact</a></li>
     </ul>
-    <a className="btn bg-[#422AD5] text-[#FFFFFF] "><PiPlus/> New Ticket</a>
+    <a className="btn bg-gradient-to-br from-indigo-600  to-purple-500 text-white "><PiPlus/> New Ticket</a>
   </div>
 </div>
     );

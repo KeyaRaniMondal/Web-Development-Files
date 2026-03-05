@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Status_Resolved = ({ selectedTickets, onRemove, removed }) => {
-    console.log(removed)
+    console.log(removed);
     return (
-        <div>
+        <div className="flex flex-col space-y-6 w-full sm:w-[358px]">
             <div>
                 <h1>Task Status</h1>
-                <div className="card w-[358px] h-[113px] bg-base-100 shadow-sm">
+                <div className="card w-full bg-base-100 shadow-sm">
                     <div className="card-body">
                         {
                             selectedTickets && selectedTickets.length > 0 ? selectedTickets.map(t =>
