@@ -8,9 +8,9 @@ const HomePage = () => {
     return (
         <>
             <Navbar />
-            <Banner />
+            <Banner/>
             {/* <Suspense> */}
-                <TicketCard />
+                <TicketCard className='home' />
             {/* </Suspense> */}
             <Footer/>
 

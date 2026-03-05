@@ -39,7 +39,7 @@ const TicketCard = () => {
 
 
     return (
-        <div className='flex justify-between'>
+        <div className=' home flex justify-between'>
             <div>
                 <h1>Customer Tickets</h1>
                 <div className='grid grid-cols-2 gap-5'>
