@@ -5,6 +5,7 @@ import Status_Resolved from './Status_Resolved';
 const TicketCard = () => {
     const [tickets, setTickets] = useState([])
     const [selectedTickets, setSelectedTickets] = useState([])
+    const [removed, setRemoved] = useState([])
     useEffect(() => {
         const fetchTickets = async () => {
             const res = await fetch('/tickets.json')
@@ -33,8 +34,9 @@ const TicketCard = () => {
         });
     };
 
-    const handleRemoveTicket = (id) => {
-        setSelectedTickets(prev => prev.filter(t => t.id !== id));
+    const handleRemoveTicket = (ticket) => {
+        setSelectedTickets(prev => prev.filter(t => t.id !== ticket.id));
+        setRemoved(prev => [...prev, ticket]);
     };
 
 
@@ -50,11 +52,11 @@ const TicketCard = () => {
                                     <span className='flex justify-between'>
                                         <h2 className="card-title">{tick.title}</h2>
                                         <button className={`btn btn-sm rounded-full ${(() => {
-                                                const s = tick.status.toLowerCase();
-                                                if (s === 'open') return 'btn-success';
-                                                if (s === 'in progress' || s === 'in-progress') return 'btn-warning';
-                                                return '';
-                                            })()
+                                            const s = tick.status.toLowerCase();
+                                            if (s === 'open') return 'btn-success';
+                                            if (s === 'in progress' || s === 'in-progress') return 'btn-warning';
+                                            return '';
+                                        })()
                                             }`}>
                                             <GoDotFill />{tick.status}
                                         </button>
@@ -78,7 +80,7 @@ const TicketCard = () => {
                 </div>
             </div>
             <div className='grid grid-rows-2'>
-                <Status_Resolved selectedTickets={selectedTickets} onRemove={handleRemoveTicket} />
+                <Status_Resolved selectedTickets={selectedTickets} onRemove={handleRemoveTicket} removed={removed} />
             </div>
         </div>
     );
