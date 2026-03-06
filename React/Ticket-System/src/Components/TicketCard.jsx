@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { GoDotFill } from 'react-icons/go';
 import Status_Resolved from './Status_Resolved';
+import { Bounce, toast } from 'react-toastify';
 
 const TicketCard = () => {
     const [tickets, setTickets] = useState([])
@@ -20,23 +21,46 @@ const TicketCard = () => {
     // .then(data=>console.log(data))
 
     //For adding tickets to task status and removing from there
-    const handleSelectedTicket = (ticket) => {
-        setSelectedTickets(prev => {
-            const alreadySelected = prev.find(t => t.id === ticket.id);
+    // toast options
+    const toastOpts = (id) => ({
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        toastId: id,
+    });
 
+    const handleSelectedTicket = (ticket) => {
+        // determine current selection which toast to show
+        const alreadySelected = selectedTickets.find(t => t.id === ticket.id);
+
+        setSelectedTickets(prev => {
             if (alreadySelected) {
-                alert(`Ticket ${ticket.id} removed from selection`);
                 return prev.filter(t => t.id !== ticket.id);
             } else {
-                alert(`Ticket ${ticket.id} added to selection`);
                 return [...prev, ticket];
             }
         });
+
+        // show toast based on whether the ticket was added or removed from selection
+        if (alreadySelected) {
+            toast.info(`Ticket ${ticket.id} resolved tasks`, toastOpts(ticket.id + "-removed"));
+        } else {
+            toast.info(`Ticket ${ticket.id} added to Task Status`, toastOpts(ticket.id + "-added"));
+        }
     };
 
     const handleRemoveTicket = (ticket) => {
         setSelectedTickets(prev => prev.filter(t => t.id !== ticket.id));
         setRemoved(prev => [...prev, ticket]);
+
+        // show a toast when a ticket is completed
+        toast.success(`Ticket ${ticket.id} marked as complete`, toastOpts(ticket.id + "-completed"));
     };
 
 
