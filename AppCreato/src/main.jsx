@@ -4,6 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import MainLayout from './Layouts/MainLayout.jsx'
 import Home from './Home.jsx'
+import axios from 'axios'
 
 const router=createBrowserRouter([
   {
@@ -12,7 +13,11 @@ const router=createBrowserRouter([
     children:[
       {
         index: true,
-        element:<Home/>
+        element:<Home/>,
+        loader:async()=>{
+          const res=await axios.get('/apps.json')
+          return res.data;
+        }
       }
     ]
   }

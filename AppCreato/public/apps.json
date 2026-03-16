@@ -1,0 +1,283 @@
+[
+{
+"id":1,
+"image":"https://example.com/images/app1.png",
+"title":"TaskFlow",
+"companyName":"Productive Labs",
+"description":"A simple productivity app to manage tasks and daily goals efficiently.",
+"size":35,
+"reviews":1200,
+"ratingAvg":4.4,
+"downloads":50000,
+"ratings":[
+{"name":"1 star","count":40},
+{"name":"2 star","count":60},
+{"name":"3 star","count":200},
+{"name":"4 star","count":500},
+{"name":"5 star","count":400}
+]
+},
+{
+"id":2,
+"image":"https://example.com/images/app2.png",
+"title":"PhotoMaster",
+"companyName":"Pixel Studio",
+"description":"Advanced photo editing app with filters, layers and AI enhancement.",
+"size":78,
+"reviews":980,
+"ratingAvg":4.2,
+"downloads":80000,
+"ratings":[
+{"name":"1 star","count":30},
+{"name":"2 star","count":70},
+{"name":"3 star","count":180},
+{"name":"4 star","count":400},
+{"name":"5 star","count":300}
+]
+},
+{
+"id":3,
+"image":"https://example.com/images/app3.png",
+"title":"FitTrack",
+"companyName":"HealthTech",
+"description":"Track your workouts, calories and fitness progress easily.",
+"size":42,
+"reviews":870,
+"ratingAvg":4.3,
+"downloads":60000,
+"ratings":[
+{"name":"1 star","count":20},
+{"name":"2 star","count":50},
+{"name":"3 star","count":150},
+{"name":"4 star","count":400},
+{"name":"5 star","count":250}
+]
+},
+{
+"id":4,
+"image":"https://example.com/images/app4.png",
+"title":"BudgetWise",
+"companyName":"FinEdge",
+"description":"Manage expenses, track income and plan your monthly budget.",
+"size":28,
+"reviews":640,
+"ratingAvg":4.1,
+"downloads":45000,
+"ratings":[
+{"name":"1 star","count":25},
+{"name":"2 star","count":45},
+{"name":"3 star","count":140},
+{"name":"4 star","count":260},
+{"name":"5 star","count":170}
+]
+},
+{
+"id":5,
+"image":"https://example.com/images/app5.png",
+"title":"TravelMate",
+"companyName":"Globe Apps",
+"description":"Discover destinations, plan trips and organize travel itineraries.",
+"size":55,
+"reviews":740,
+"ratingAvg":4.5,
+"downloads":90000,
+"ratings":[
+{"name":"1 star","count":15},
+{"name":"2 star","count":35},
+{"name":"3 star","count":120},
+{"name":"4 star","count":300},
+{"name":"5 star","count":270}
+]
+},
+{
+"id":6,
+"image":"https://example.com/images/app6.png",
+"title":"CodeNote",
+"companyName":"DevTools Inc",
+"description":"A note-taking app designed specifically for developers.",
+"size":22,
+"reviews":510,
+"ratingAvg":4.0,
+"downloads":35000,
+"ratings":[
+{"name":"1 star","count":30},
+{"name":"2 star","count":50},
+{"name":"3 star","count":130},
+{"name":"4 star","count":190},
+{"name":"5 star","count":110}
+]
+},
+{
+"id":7,
+"image":"https://example.com/images/app7.png",
+"title":"MeditateNow",
+"companyName":"CalmMind",
+"description":"Guided meditation sessions for stress relief and focus.",
+"size":33,
+"reviews":430,
+"ratingAvg":4.6,
+"downloads":30000,
+"ratings":[
+{"name":"1 star","count":10},
+{"name":"2 star","count":20},
+{"name":"3 star","count":70},
+{"name":"4 star","count":150},
+{"name":"5 star","count":180}
+]
+},
+{
+"id":8,
+"image":"https://example.com/images/app8.png",
+"title":"RecipeHub",
+"companyName":"Kitchen Labs",
+"description":"Find thousands of recipes and cooking tutorials.",
+"size":48,
+"reviews":690,
+"ratingAvg":4.3,
+"downloads":72000,
+"ratings":[
+{"name":"1 star","count":18},
+{"name":"2 star","count":40},
+{"name":"3 star","count":160},
+{"name":"4 star","count":280},
+{"name":"5 star","count":192}
+]
+},
+{
+"id":9,
+"image":"https://example.com/images/app9.png",
+"title":"WeatherCast",
+"companyName":"SkyData",
+"description":"Real-time weather forecasts and alerts for your location.",
+"size":19,
+"reviews":900,
+"ratingAvg":4.2,
+"downloads":110000,
+"ratings":[
+{"name":"1 star","count":50},
+{"name":"2 star","count":80},
+{"name":"3 star","count":210},
+{"name":"4 star","count":360},
+{"name":"5 star","count":200}
+]
+},
+{
+"id":10,
+"image":"https://example.com/images/app10.png",
+"title":"StudyPlanner",
+"companyName":"EduTech",
+"description":"Plan study schedules and manage assignments easily.",
+"size":26,
+"reviews":580,
+"ratingAvg":4.4,
+"downloads":47000,
+"ratings":[
+{"name":"1 star","count":12},
+{"name":"2 star","count":30},
+{"name":"3 star","count":120},
+{"name":"4 star","count":260},
+{"name":"5 star","count":158}
+]
+},
+
+{
+"id":11,"image":"https://example.com/images/app11.png","title":"NoteStack","companyName":"SmartSoft","description":"Minimalist note taking application.","size":18,"reviews":300,"ratingAvg":4.1,"downloads":20000,
+"ratings":[{"name":"1 star","count":15},{"name":"2 star","count":25},{"name":"3 star","count":70},{"name":"4 star","count":120},{"name":"5 star","count":70}]
+},
+
+{
+"id":12,"image":"https://example.com/images/app12.png","title":"RunTracker","companyName":"FitLabs","description":"Track your running routes and speed.","size":36,"reviews":420,"ratingAvg":4.3,"downloads":26000,
+"ratings":[{"name":"1 star","count":10},{"name":"2 star","count":30},{"name":"3 star","count":80},{"name":"4 star","count":180},{"name":"5 star","count":120}]
+},
+
+{
+"id":13,"image":"https://example.com/images/app13.png","title":"LanguageLeap","companyName":"EduGlobal","description":"Learn new languages with daily lessons.","size":60,"reviews":710,"ratingAvg":4.5,"downloads":83000,
+"ratings":[{"name":"1 star","count":20},{"name":"2 star","count":35},{"name":"3 star","count":140},{"name":"4 star","count":310},{"name":"5 star","count":205}]
+},
+
+{
+"id":14,"image":"https://example.com/images/app14.png","title":"FocusTimer","companyName":"DeepWork","description":"Pomodoro timer to increase productivity.","size":14,"reviews":290,"ratingAvg":4.2,"downloads":22000,
+"ratings":[{"name":"1 star","count":12},{"name":"2 star","count":22},{"name":"3 star","count":60},{"name":"4 star","count":120},{"name":"5 star","count":76}]
+},
+
+{
+"id":15,"image":"https://example.com/images/app15.png","title":"NewsPulse","companyName":"DailyMedia","description":"Latest global news in one place.","size":31,"reviews":860,"ratingAvg":4.0,"downloads":95000,
+"ratings":[{"name":"1 star","count":60},{"name":"2 star","count":90},{"name":"3 star","count":210},{"name":"4 star","count":330},{"name":"5 star","count":170}]
+},
+
+{
+"id":16,"image":"https://example.com/images/app16.png","title":"MapGuide","companyName":"GeoTech","description":"Offline maps and navigation assistance.","size":70,"reviews":540,"ratingAvg":4.3,"downloads":68000,
+"ratings":[{"name":"1 star","count":20},{"name":"2 star","count":40},{"name":"3 star","count":120},{"name":"4 star","count":230},{"name":"5 star","count":130}]
+},
+
+{
+"id":17,"image":"https://example.com/images/app17.png","title":"SleepBetter","companyName":"Wellness Co","description":"Improve sleep with relaxing sounds.","size":40,"reviews":380,"ratingAvg":4.6,"downloads":34000,
+"ratings":[{"name":"1 star","count":8},{"name":"2 star","count":20},{"name":"3 star","count":60},{"name":"4 star","count":140},{"name":"5 star","count":152}]
+},
+
+{
+"id":18,"image":"https://example.com/images/app18.png","title":"MusicMix","companyName":"SoundWave","description":"Stream and organize your music library.","size":95,"reviews":1200,"ratingAvg":4.4,"downloads":150000,
+"ratings":[{"name":"1 star","count":40},{"name":"2 star","count":80},{"name":"3 star","count":260},{"name":"4 star","count":500},{"name":"5 star","count":320}]
+},
+
+{
+"id":19,"image":"https://example.com/images/app19.png","title":"ArtSketch","companyName":"Creative Labs","description":"Digital sketchbook for artists.","size":52,"reviews":460,"ratingAvg":4.5,"downloads":41000,
+"ratings":[{"name":"1 star","count":15},{"name":"2 star","count":25},{"name":"3 star","count":90},{"name":"4 star","count":180},{"name":"5 star","count":150}]
+},
+
+{
+"id":20,"image":"https://example.com/images/app20.png","title":"PlantCare","companyName":"GreenTech","description":"Track and manage plant watering schedules.","size":24,"reviews":310,"ratingAvg":4.3,"downloads":25000,
+"ratings":[{"name":"1 star","count":9},{"name":"2 star","count":18},{"name":"3 star","count":70},{"name":"4 star","count":130},{"name":"5 star","count":83}]
+},
+
+{
+"id":21,"image":"https://example.com/images/app21.png","title":"CryptoWatch","companyName":"FinChain","description":"Monitor cryptocurrency prices in real time.","size":34,"reviews":690,"ratingAvg":4.2,"downloads":72000,
+"ratings":[{"name":"1 star","count":25},{"name":"2 star","count":55},{"name":"3 star","count":170},{"name":"4 star","count":280},{"name":"5 star","count":160}]
+},
+
+{
+"id":22,"image":"https://example.com/images/app22.png","title":"BookShelf","companyName":"ReadersHub","description":"Track books you read and discover new titles.","size":29,"reviews":480,"ratingAvg":4.4,"downloads":39000,
+"ratings":[{"name":"1 star","count":12},{"name":"2 star","count":20},{"name":"3 star","count":90},{"name":"4 star","count":210},{"name":"5 star","count":148}]
+},
+
+{
+"id":23,"image":"https://example.com/images/app23.png","title":"GameStats","companyName":"PlayLabs","description":"Analyze game performance and statistics.","size":44,"reviews":350,"ratingAvg":4.1,"downloads":30000,
+"ratings":[{"name":"1 star","count":18},{"name":"2 star","count":30},{"name":"3 star","count":90},{"name":"4 star","count":140},{"name":"5 star","count":72}]
+},
+
+{
+"id":24,"image":"https://example.com/images/app24.png","title":"ShopSmart","companyName":"RetailTech","description":"Compare product prices across online stores.","size":37,"reviews":540,"ratingAvg":4.2,"downloads":56000,
+"ratings":[{"name":"1 star","count":20},{"name":"2 star","count":40},{"name":"3 star","count":120},{"name":"4 star","count":240},{"name":"5 star","count":120}]
+},
+
+{
+"id":25,"image":"https://example.com/images/app25.png","title":"VoiceNote","companyName":"AudioTech","description":"Record voice notes and convert to text.","size":27,"reviews":390,"ratingAvg":4.3,"downloads":32000,
+"ratings":[{"name":"1 star","count":10},{"name":"2 star","count":25},{"name":"3 star","count":85},{"name":"4 star","count":160},{"name":"5 star","count":110}]
+},
+
+{
+"id":26,"image":"https://example.com/images/app26.png","title":"PetCare","companyName":"AnimalTech","description":"Manage your pet health records.","size":30,"reviews":260,"ratingAvg":4.4,"downloads":21000,
+"ratings":[{"name":"1 star","count":7},{"name":"2 star","count":15},{"name":"3 star","count":50},{"name":"4 star","count":110},{"name":"5 star","count":78}]
+},
+
+{
+"id":27,"image":"https://example.com/images/app27.png","title":"EventPlanner","companyName":"PlanIt","description":"Plan and organize events easily.","size":46,"reviews":370,"ratingAvg":4.2,"downloads":28000,
+"ratings":[{"name":"1 star","count":14},{"name":"2 star","count":30},{"name":"3 star","count":90},{"name":"4 star","count":150},{"name":"5 star","count":86}]
+},
+
+{
+"id":28,"image":"https://example.com/images/app28.png","title":"SecureVault","companyName":"CyberSafe","description":"Store passwords and sensitive data securely.","size":25,"reviews":610,"ratingAvg":4.5,"downloads":65000,
+"ratings":[{"name":"1 star","count":15},{"name":"2 star","count":20},{"name":"3 star","count":110},{"name":"4 star","count":280},{"name":"5 star","count":185}]
+},
+
+{
+"id":29,"image":"https://example.com/images/app29.png","title":"HabitBuilder","companyName":"LifeTrack","description":"Build positive habits with daily reminders.","size":23,"reviews":450,"ratingAvg":4.4,"downloads":36000,
+"ratings":[{"name":"1 star","count":10},{"name":"2 star","count":18},{"name":"3 star","count":95},{"name":"4 star","count":190},{"name":"5 star","count":137}]
+},
+
+{
+"id":30,"image":"https://example.com/images/app30.png","title":"MindMap Pro","companyName":"IdeaWorks","description":"Create mind maps for brainstorming ideas.","size":38,"reviews":320,"ratingAvg":4.3,"downloads":27000,
+"ratings":[{"name":"1 star","count":9},{"name":"2 star","count":19},{"name":"3 star","count":70},{"name":"4 star","count":150},{"name":"5 star","count":72}]
+}
+
+]
