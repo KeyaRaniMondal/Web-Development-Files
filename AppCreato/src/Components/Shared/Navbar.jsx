@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="navbar-start">
         <div className="flex items-center gap-2">
           <img src={logo} alt="logo" className="w-10 h-10" />
-          <span className="font-bold text-lg">HERO.IO</span>
+          <span className="font-bold text-lg  text-purple-600">HERO.IO</span>
         </div>
       </div>
 
