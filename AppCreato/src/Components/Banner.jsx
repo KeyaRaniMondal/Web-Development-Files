@@ -3,7 +3,7 @@ import { FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
 import hero from '../assets/hero.png'
 const Banner = () => {
     return (
-        <div className='max-w-[1440 px] h-[344 px] mx-auto mt-16 bg-base-300 flex flex-col items-center justify-center text-center gap-6'>
+        <div className='max-w-[1440 px] h-[344 px] mx-auto mt-10 bg-base-300 flex flex-col items-center justify-center text-center gap-6'>
             <h1 className='text-5xl font-bold'>
                 <span className='text-[#001931]'>We Build </span><br />
                 <span className='text-purple-600'>Productive </span><span className='text-[#001931]'>Apps</span>

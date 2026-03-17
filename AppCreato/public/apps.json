@@ -1,7 +1,7 @@
 [
 {
 "id":1,
-"image":"https://example.com/images/app1.png",
+"image":"https://i.ibb.co.com/8LyQ4Gp6/Screenshot-2026-03-16-224517.jpg",
 "title":"TaskFlow",
 "companyName":"Productive Labs",
 "description":"A simple productivity app to manage tasks and daily goals efficiently.",
@@ -19,7 +19,7 @@
 },
 {
 "id":2,
-"image":"https://example.com/images/app2.png",
+"image":"https://i.ibb.co.com/RG4Wzv61/Screenshot-2026-03-16-224807.jpg",
 "title":"PhotoMaster",
 "companyName":"Pixel Studio",
 "description":"Advanced photo editing app with filters, layers and AI enhancement.",
@@ -37,7 +37,7 @@
 },
 {
 "id":3,
-"image":"https://example.com/images/app3.png",
+"image":"https://i.ibb.co.com/tpntbpP8/Screenshot-2026-03-16-224852.jpg",
 "title":"FitTrack",
 "companyName":"HealthTech",
 "description":"Track your workouts, calories and fitness progress easily.",
@@ -55,7 +55,7 @@
 },
 {
 "id":4,
-"image":"https://example.com/images/app4.png",
+"image":"https://i.ibb.co.com/RTXMTX4M/Screenshot-2026-03-16-224932.jpg",
 "title":"BudgetWise",
 "companyName":"FinEdge",
 "description":"Manage expenses, track income and plan your monthly budget.",
@@ -73,7 +73,7 @@
 },
 {
 "id":5,
-"image":"https://example.com/images/app5.png",
+"image":"https://i.ibb.co.com/d013Drnc/Screenshot-2026-03-16-225009.jpg",
 "title":"TravelMate",
 "companyName":"Globe Apps",
 "description":"Discover destinations, plan trips and organize travel itineraries.",
@@ -91,7 +91,7 @@
 },
 {
 "id":6,
-"image":"https://example.com/images/app6.png",
+"image":"https://i.ibb.co.com/JRdBs6zq/Screenshot-2026-03-16-225051.jpg",
 "title":"CodeNote",
 "companyName":"DevTools Inc",
 "description":"A note-taking app designed specifically for developers.",
@@ -109,7 +109,7 @@
 },
 {
 "id":7,
-"image":"https://example.com/images/app7.png",
+"image":"https://i.ibb.co.com/6cwTVhXh/Screenshot-2026-03-16-225133.jpg",
 "title":"MeditateNow",
 "companyName":"CalmMind",
 "description":"Guided meditation sessions for stress relief and focus.",
@@ -127,7 +127,7 @@
 },
 {
 "id":8,
-"image":"https://example.com/images/app8.png",
+"image":"https://i.ibb.co.com/mVHvLgGj/Screenshot-2026-03-16-225209.jpg",
 "title":"RecipeHub",
 "companyName":"Kitchen Labs",
 "description":"Find thousands of recipes and cooking tutorials.",
@@ -145,7 +145,7 @@
 },
 {
 "id":9,
-"image":"https://example.com/images/app9.png",
+"image":"https://i.ibb.co.com/TS4PW3V/Screenshot-2026-03-16-225307.jpg",
 "title":"WeatherCast",
 "companyName":"SkyData",
 "description":"Real-time weather forecasts and alerts for your location.",
@@ -163,7 +163,7 @@
 },
 {
 "id":10,
-"image":"https://example.com/images/app10.png",
+"image":"https://i.ibb.co.com/XZRJVSD5/Screenshot-2026-03-16-225350.jpg",
 "title":"StudyPlanner",
 "companyName":"EduTech",
 "description":"Plan study schedules and manage assignments easily.",
@@ -181,12 +181,12 @@
 },
 
 {
-"id":11,"image":"https://example.com/images/app11.png","title":"NoteStack","companyName":"SmartSoft","description":"Minimalist note taking application.","size":18,"reviews":300,"ratingAvg":4.1,"downloads":20000,
+"id":11,"image":"https://i.ibb.co.com/PkY79CW/Screenshot-2026-03-16-225430.jpg","title":"NoteStack","companyName":"SmartSoft","description":"Minimalist note taking application.","size":18,"reviews":300,"ratingAvg":4.1,"downloads":20000,
 "ratings":[{"name":"1 star","count":15},{"name":"2 star","count":25},{"name":"3 star","count":70},{"name":"4 star","count":120},{"name":"5 star","count":70}]
 },
 
 {
-"id":12,"image":"https://example.com/images/app12.png","title":"RunTracker","companyName":"FitLabs","description":"Track your running routes and speed.","size":36,"reviews":420,"ratingAvg":4.3,"downloads":26000,
+"id":12,"image":"https://i.ibb.co.com/VcykfysV/Screenshot-2026-03-16-225503.jpg","title":"RunTracker","companyName":"FitLabs","description":"Track your running routes and speed.","size":36,"reviews":420,"ratingAvg":4.3,"downloads":26000,
 "ratings":[{"name":"1 star","count":10},{"name":"2 star","count":30},{"name":"3 star","count":80},{"name":"4 star","count":180},{"name":"5 star","count":120}]
 },
 

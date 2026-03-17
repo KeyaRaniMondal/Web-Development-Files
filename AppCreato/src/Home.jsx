@@ -33,7 +33,11 @@ const Home = () => {
         </div>
       </div>
       {/* for showing top apps */}
-      <Apps apps={apps} />
+      <div className='text-center justify-center mt-14'>
+        <h1 className='text-3xl font-bold mb-4'>Trending Apps</h1>
+        <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
+      <Apps apps={apps.slice(0, 8)} />
+      </div>
     </div>
   );
 };
