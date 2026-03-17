@@ -191,62 +191,62 @@
 },
 
 {
-"id":13,"image":"https://example.com/images/app13.png","title":"LanguageLeap","companyName":"EduGlobal","description":"Learn new languages with daily lessons.","size":60,"reviews":710,"ratingAvg":4.5,"downloads":83000,
+"id":13,"image":"https://i.ibb.co.com/gb5qHgS9/Screenshot-2026-03-16-225539.jpg","title":"LanguageLeap","companyName":"EduGlobal","description":"Learn new languages with daily lessons.","size":60,"reviews":710,"ratingAvg":4.5,"downloads":83000,
 "ratings":[{"name":"1 star","count":20},{"name":"2 star","count":35},{"name":"3 star","count":140},{"name":"4 star","count":310},{"name":"5 star","count":205}]
 },
 
 {
-"id":14,"image":"https://example.com/images/app14.png","title":"FocusTimer","companyName":"DeepWork","description":"Pomodoro timer to increase productivity.","size":14,"reviews":290,"ratingAvg":4.2,"downloads":22000,
+"id":14,"image":"https://i.ibb.co.com/fYW4FYcw/Screenshot-2026-03-16-225612.jpg","title":"FocusTimer","companyName":"DeepWork","description":"Pomodoro timer to increase productivity.","size":14,"reviews":290,"ratingAvg":4.2,"downloads":22000,
 "ratings":[{"name":"1 star","count":12},{"name":"2 star","count":22},{"name":"3 star","count":60},{"name":"4 star","count":120},{"name":"5 star","count":76}]
 },
 
 {
-"id":15,"image":"https://example.com/images/app15.png","title":"NewsPulse","companyName":"DailyMedia","description":"Latest global news in one place.","size":31,"reviews":860,"ratingAvg":4.0,"downloads":95000,
+"id":15,"image":"https://i.ibb.co.com/YTj2twnS/Screenshot-2026-03-16-225644.jpg","title":"NewsPulse","companyName":"DailyMedia","description":"Latest global news in one place.","size":31,"reviews":860,"ratingAvg":4.0,"downloads":95000,
 "ratings":[{"name":"1 star","count":60},{"name":"2 star","count":90},{"name":"3 star","count":210},{"name":"4 star","count":330},{"name":"5 star","count":170}]
 },
 
 {
-"id":16,"image":"https://example.com/images/app16.png","title":"MapGuide","companyName":"GeoTech","description":"Offline maps and navigation assistance.","size":70,"reviews":540,"ratingAvg":4.3,"downloads":68000,
+"id":16,"image":"https://i.ibb.co.com/xKcGMKB9/Screenshot-2026-03-16-225718.jpg","title":"MapGuide","companyName":"GeoTech","description":"Offline maps and navigation assistance.","size":70,"reviews":540,"ratingAvg":4.3,"downloads":68000,
 "ratings":[{"name":"1 star","count":20},{"name":"2 star","count":40},{"name":"3 star","count":120},{"name":"4 star","count":230},{"name":"5 star","count":130}]
 },
 
 {
-"id":17,"image":"https://example.com/images/app17.png","title":"SleepBetter","companyName":"Wellness Co","description":"Improve sleep with relaxing sounds.","size":40,"reviews":380,"ratingAvg":4.6,"downloads":34000,
+"id":17,"image":"https://i.ibb.co.com/WWKYRZVq/Screenshot-2026-03-16-225757.jpg","title":"SleepBetter","companyName":"Wellness Co","description":"Improve sleep with relaxing sounds.","size":40,"reviews":380,"ratingAvg":4.6,"downloads":34000,
 "ratings":[{"name":"1 star","count":8},{"name":"2 star","count":20},{"name":"3 star","count":60},{"name":"4 star","count":140},{"name":"5 star","count":152}]
 },
 
 {
-"id":18,"image":"https://example.com/images/app18.png","title":"MusicMix","companyName":"SoundWave","description":"Stream and organize your music library.","size":95,"reviews":1200,"ratingAvg":4.4,"downloads":150000,
+"id":18,"image":"https://i.ibb.co.com/G333H6vD/Screenshot-2026-03-16-225833.jpg","title":"MusicMix","companyName":"SoundWave","description":"Stream and organize your music library.","size":95,"reviews":1200,"ratingAvg":4.4,"downloads":150000,
 "ratings":[{"name":"1 star","count":40},{"name":"2 star","count":80},{"name":"3 star","count":260},{"name":"4 star","count":500},{"name":"5 star","count":320}]
 },
 
 {
-"id":19,"image":"https://example.com/images/app19.png","title":"ArtSketch","companyName":"Creative Labs","description":"Digital sketchbook for artists.","size":52,"reviews":460,"ratingAvg":4.5,"downloads":41000,
+"id":19,"image":"https://i.ibb.co.com/Q0tFjdk/Screenshot-2026-03-16-225922.jpg","title":"ArtSketch","companyName":"Creative Labs","description":"Digital sketchbook for artists.","size":52,"reviews":460,"ratingAvg":4.5,"downloads":41000,
 "ratings":[{"name":"1 star","count":15},{"name":"2 star","count":25},{"name":"3 star","count":90},{"name":"4 star","count":180},{"name":"5 star","count":150}]
 },
 
 {
-"id":20,"image":"https://example.com/images/app20.png","title":"PlantCare","companyName":"GreenTech","description":"Track and manage plant watering schedules.","size":24,"reviews":310,"ratingAvg":4.3,"downloads":25000,
+"id":20,"image":"https://i.ibb.co.com/svy9CJx9/Screenshot-2026-03-16-225957.jpg","title":"PlantCare","companyName":"GreenTech","description":"Track and manage plant watering schedules.","size":24,"reviews":310,"ratingAvg":4.3,"downloads":25000,
 "ratings":[{"name":"1 star","count":9},{"name":"2 star","count":18},{"name":"3 star","count":70},{"name":"4 star","count":130},{"name":"5 star","count":83}]
 },
 
 {
-"id":21,"image":"https://example.com/images/app21.png","title":"CryptoWatch","companyName":"FinChain","description":"Monitor cryptocurrency prices in real time.","size":34,"reviews":690,"ratingAvg":4.2,"downloads":72000,
+"id":21,"image":"https://i.ibb.co.com/ynjWnG0g/Screenshot-2026-03-16-230028.jpg","title":"CryptoWatch","companyName":"FinChain","description":"Monitor cryptocurrency prices in real time.","size":34,"reviews":690,"ratingAvg":4.2,"downloads":72000,
 "ratings":[{"name":"1 star","count":25},{"name":"2 star","count":55},{"name":"3 star","count":170},{"name":"4 star","count":280},{"name":"5 star","count":160}]
 },
 
 {
-"id":22,"image":"https://example.com/images/app22.png","title":"BookShelf","companyName":"ReadersHub","description":"Track books you read and discover new titles.","size":29,"reviews":480,"ratingAvg":4.4,"downloads":39000,
+"id":22,"image":"https://i.ibb.co.com/sp2KdX94/Screenshot-2026-03-16-230102.jpg","title":"BookShelf","companyName":"ReadersHub","description":"Track books you read and discover new titles.","size":29,"reviews":480,"ratingAvg":4.4,"downloads":39000,
 "ratings":[{"name":"1 star","count":12},{"name":"2 star","count":20},{"name":"3 star","count":90},{"name":"4 star","count":210},{"name":"5 star","count":148}]
 },
 
 {
-"id":23,"image":"https://example.com/images/app23.png","title":"GameStats","companyName":"PlayLabs","description":"Analyze game performance and statistics.","size":44,"reviews":350,"ratingAvg":4.1,"downloads":30000,
+"id":23,"image":"https://i.ibb.co.com/FqhxMLhC/Screenshot-2026-03-16-230135.jpg","title":"GameStats","companyName":"PlayLabs","description":"Analyze game performance and statistics.","size":44,"reviews":350,"ratingAvg":4.1,"downloads":30000,
 "ratings":[{"name":"1 star","count":18},{"name":"2 star","count":30},{"name":"3 star","count":90},{"name":"4 star","count":140},{"name":"5 star","count":72}]
 },
 
 {
-"id":24,"image":"https://example.com/images/app24.png","title":"ShopSmart","companyName":"RetailTech","description":"Compare product prices across online stores.","size":37,"reviews":540,"ratingAvg":4.2,"downloads":56000,
+"id":24,"image":"https://i.ibb.co.com/nMYx4wkp/Screenshot-2026-03-16-230206.jpg","title":"ShopSmart","companyName":"RetailTech","description":"Compare product prices across online stores.","size":37,"reviews":540,"ratingAvg":4.2,"downloads":56000,
 "ratings":[{"name":"1 star","count":20},{"name":"2 star","count":40},{"name":"3 star","count":120},{"name":"4 star","count":240},{"name":"5 star","count":120}]
 },
 

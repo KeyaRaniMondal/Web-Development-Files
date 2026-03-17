@@ -17,17 +17,30 @@ const Home = () => {
         <div className='flex justify-around gap-20'>
           <div >
             <p>Total Downloads</p>
-            <h1 className='text-4xl font-bold'>{totalDownloads}</h1>
+            <h1 className='text-4xl font-bold'>
+              {/* to show the total downloads in a compact format like 1.2K, 3.4M etc we can use Intl.NumberFormat with notation set to compact */}
+              {new Intl.NumberFormat("en-US", {
+                notation: "compact"
+              }).format(totalDownloads)}
+            </h1>
             <p>21% more than last month</p>
           </div>
           <div>
             <p>Total Reviews</p>
-            <h1 className='text-4xl font-bold'>{totalReviews}</h1>
+            <h1 className='text-4xl font-bold'>
+              {new Intl.NumberFormat("en-US", {
+                notation: "compact"
+              }).format(totalReviews)}
+            </h1>
             <p>46% more than last month</p>
           </div>
           <div>
             <p>Active Apps</p>
-            <h1 className='text-4xl font-bold'>{activeApps}</h1>
+            <h1 className='text-4xl font-bold'>
+              {new Intl.NumberFormat("en-US", {
+                notation: "compact"
+              }).format(activeApps)}
+            </h1>
             <p>31 more will Launch</p>
           </div>
         </div>
