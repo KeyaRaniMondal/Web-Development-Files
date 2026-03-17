@@ -37,6 +37,9 @@ const Home = () => {
         <h1 className='text-3xl font-bold mb-4'>Trending Apps</h1>
         <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
       <Apps apps={apps.slice(0, 8)} />
+              <button className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white gap-2 py-2 px-4 ">
+         Show All
+        </button>
       </div>
     </div>
   );
