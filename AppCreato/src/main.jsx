@@ -3,9 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import MainLayout from './Layouts/MainLayout.jsx'
-import Home from './Home.jsx'
+import Home from './Pages/Home.jsx'
 import axios from 'axios'
-import Apps from './Components/Apps.jsx'
+import Apps from './Pages/Apps.jsx'
+import AppDetails from './Pages/AppDetails.jsx'
 
 const router=createBrowserRouter([
   {
@@ -36,11 +37,12 @@ const router=createBrowserRouter([
       },
       {
         path:'app/:id',
-        element:<Apps/>,
+        element:<AppDetails/>,
         loader:async({params})=>{
           const res=await axios.get('/apps.json')
-          const app=res.data.find((appdata)=>appdata.id===params.id)
-          return app;
+          const appId=Number(params.id)
+          const app=res.data.find((appdata)=>appdata.id===appId)
+          return app ?? null;
         }
       }
     ]
