@@ -6,6 +6,7 @@ import { VscThumbsupFilled } from 'react-icons/vsc';
 import Chart from '../Components/Chart';
 import appError from '../assets/App-Error.png'
 import { addAppsId } from '../Components/localStorage';
+import toast from 'react-hot-toast';
 
 const AppDetails = () => {
     const details = useLoaderData()
@@ -26,6 +27,7 @@ const AppDetails = () => {
 
     const handleInstall=(id)=>{
         addAppsId(id);
+        toast.success('Successfully Added App for Installation!')
     }
 
     return (

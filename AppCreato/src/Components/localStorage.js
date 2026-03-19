@@ -17,3 +17,11 @@ export const addAppsId=(id)=>{
         saveAppsId(appsId);
     }
 }
+
+
+export const removeAppsId=(id)=>{
+    const appsId = getAppsId().filter(appId => appId !== id);
+    saveAppsId(appsId);
+}
+
+
