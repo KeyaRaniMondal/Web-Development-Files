@@ -4,7 +4,7 @@ import Apps from './Apps';
 import { useLoaderData } from 'react-router';
 
 const Home = () => {
-  const apps=useLoaderData();
+  const apps = useLoaderData();
   const totalDownloads = apps.reduce((sum, app) => sum + app.downloads, 0);
   const totalReviews = apps.reduce((sum, app) => sum + app.reviews, 0);
   const activeApps = apps.length;
@@ -49,9 +49,9 @@ const Home = () => {
       <div className='text-center justify-center mt-14'>
         <h1 className='text-3xl font-bold mb-4'>Trending Apps</h1>
         <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
-      <Apps apps={apps.slice(0, 8)} />
-              <button className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white gap-2 py-2 px-4 ">
-         Show All
+        <Apps apps={apps.slice(0, 8)} />
+        <button className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white gap-2 py-2 px-4 ">
+          Show All
         </button>
       </div>
     </div>

@@ -4,21 +4,26 @@ import { FaStar } from 'react-icons/fa';
 import { FiDownload } from 'react-icons/fi';
 import { VscThumbsupFilled } from 'react-icons/vsc';
 import Chart from '../Components/Chart';
+import appError from '../assets/App-Error.png'
 
 const AppDetails = () => {
     const details = useLoaderData()
     // console.log(details)
-    // if (!details) {
-    //     return (
-    //         <div className="max-w-4xl mx-auto mt-10 bg-base-200 p-8 rounded-xl">
-    //             <h2 className="text-2xl font-semibold">App not found</h2>
-    //             <p className="mt-2 text-gray-600">The app you are looking for does not exist.</p>
-    //         </div>
-    //     );
-    // }
+    if (!details) {
+        return (
+            <div className="max-w-4xl mx-auto mt-10 bg-base-300 p-8 rounded-xl justify-center items-center text-center">
+                <img src={appError} alt="App not found" className='w-[750px] h-[500px] object-cover' />
+                <h2 className="text-5xl font-bold my-5">OPPS!! App not found</h2>
+                <p className="mt-2 text-gray-600">The App you are requesting is not found on our system.  please try another apps</p>
+                <button className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white gap-2 py-2 px-4 my-5 ">
+                    Go Back!
+                </button>
+            </div>
+        );
+    }
 
     return (
-        <div className='w-[1440px] mx-auto mt-10'>
+        <div className='w-[1440px] bg-base-300 mx-auto mt-10'>
             <div className='flex justify-left gap-10'>
                 <div>
                     <img src={details.image} alt={details.title} className='w-[350px] h-[350px]' />
@@ -43,8 +48,6 @@ const AppDetails = () => {
                                 notation: 'compact'
                             }).format(details.reviews)}</h1>
                         </div>
-
-
 
                     </div>
                     <button className='btn bg-[#0ea978] text-white p-2 rounded'>Install Now ({details.size} MB)</button>
