@@ -7,17 +7,19 @@ import Home from './Pages/Home.jsx'
 import axios from 'axios'
 import Apps from './Pages/Apps.jsx'
 import AppDetails from './Pages/AppDetails.jsx'
+import Error from './Pages/Error.jsx'
+import Installation from './Pages/Installation.jsx'
 
-const router=createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
-    children:[
+    children: [
       {
         index: true,
-        element:<Home/>,
-        loader:async()=>{
-          const res=await axios.get('/apps.json')
+        element: <Home />,
+        loader: async () => {
+          const res = await axios.get('/apps.json')
           return res.data;
         }
       },
@@ -26,30 +28,48 @@ const router=createBrowserRouter([
   {
     path: '/apps',
     element: <MainLayout />,
-    children:[
+    children: [
       {
         index: true,
-        element:<Apps/>,
-        loader:async()=>{
-          const res=await axios.get('/apps.json')
+        element: <Apps />,
+        loader: async () => {
+          const res = await axios.get('/apps.json')
           return res.data;
         }
       },
       {
-        path:'app/:id',
-        element:<AppDetails/>,
-        loader:async({params})=>{
-          const res=await axios.get('/apps.json')
-          const appId=Number(params.id)
-          const app=res.data.find((appdata)=>appdata.id===appId)
+        path: 'app/:id',
+        element: <AppDetails />,
+        loader: async ({ params }) => {
+          const res = await axios.get('/apps.json')
+          const appId = Number(params.id)
+          const app = res.data.find((appdata) => appdata.id === appId)
           return app ?? null;
         }
       }
     ]
+  },
+  {
+    path: '/installation',
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <Installation />,
+        loader: async () => {
+          const res = await axios.get('/apps.json')
+          return res.data;
+        }
+      },
+    ]
+  },
+  {
+    path: '*',
+    element: <Error />
   }
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )
