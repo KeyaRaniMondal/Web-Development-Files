@@ -5,6 +5,7 @@ import { FiDownload } from 'react-icons/fi';
 import { VscThumbsupFilled } from 'react-icons/vsc';
 import Chart from '../Components/Chart';
 import appError from '../assets/App-Error.png'
+import { addAppsId } from '../Components/localStorage';
 
 const AppDetails = () => {
     const details = useLoaderData()
@@ -20,6 +21,11 @@ const AppDetails = () => {
                 </button>
             </div>
         );
+    }
+
+
+    const handleInstall=(id)=>{
+        addAppsId(id);
     }
 
     return (
@@ -50,7 +56,7 @@ const AppDetails = () => {
                         </div>
 
                     </div>
-                    <button className='btn bg-[#0ea978] text-white p-2 rounded'>Install Now ({details.size} MB)</button>
+                    <button onClick={() => handleInstall(details.id)} className='btn bg-[#0ea978] text-white p-2 rounded'>Install Now ({details.size} MB)</button>
                 </div>
             </div>
 

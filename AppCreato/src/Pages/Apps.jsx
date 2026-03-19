@@ -33,7 +33,7 @@ const Apps = ({ apps: appsProp }) => {
             </div>
 
             <div className='flex justify-between items-center mt-10 w-[1440px] mx-auto'>
-                <div>
+                <div className='font-semibold text-2xl'>
                     ({apps.length}) Apps Found
                 </div>
                 <div>
