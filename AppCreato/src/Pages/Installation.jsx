@@ -34,10 +34,10 @@ const Installation = () => {
         setInstalledApps(sorted)
     }
     return (
-        <div className='bg-[#f7f8f9] text-center justify-center py-10'>
+        <div className='bg-[#f7f8f9] text-center justify-center py-10 px-4'>
             <h1 className='font-bold text-4xl '>Your Installed Apps</h1>
             <p className='text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
-            <div className='flex justify-between w-[1440px] mx-auto '>
+            <div className='max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4'>
                 <h1 className='font-semibold text-2xl'>{installedApps.length} Apps Found</h1>
                 <select defaultValue="Pick a font" className="select select-ghost border-1 " onChange={(e) => handleSortBySize(e.target.value)}>
                     <option >Sort By Size</option>
@@ -47,15 +47,15 @@ const Installation = () => {
             </div>
             {
                 installedApps.length > 0 ? (
-                    <div className='w-[1440px] mx-auto mt-10 gap-5'>
+                    <div className='max-w-screen-xl mx-auto mt-10 gap-5'>
                         {installedApps.map((app) => (
 
-                            <div key={app.id} className='card flex justify-between items-center bg-[#FFFFFF] h-[112px] shadow-xl p-4  mb-4'>
-                                <div className='flex items-center gap-5'>
-                                    <img src={app.image} alt={app.title} className='w-[80px] h-[80px]' />
+                            <div key={app.id} className='card flex flex-col sm:flex-row justify-between items-start sm:items-center bg-[#FFFFFF] shadow-xl p-4 mb-4 gap-4'>
+                                <div className='flex items-start sm:items-center gap-4'>
+                                    <img src={app.image} alt={app.title} className='w-20 h-20 object-cover' />
                                     <div className='flex flex-col'>
                                         <h2>{app.title}</h2>
-                                        <div className='flex justify-between'>
+                                        <div className='flex flex-wrap gap-2'>
                                             <span className='flex items-center gap-2 text-[#00D390] rounded-md p-2'>
                                                 <FiDownload />
                                                 {
@@ -76,7 +76,7 @@ const Installation = () => {
                                 </div>
 
                                 <button onClick={() => handleUninstall(app.id)}
-                                    className='btn bg-[#0ea978] h-10  text-white p-2 rounded'>Uninstall</button>
+                                    className='btn bg-[#0ea978] h-10 text-white p-2 rounded w-full sm:w-auto'>Uninstall</button>
                             </div>
                         ))}
                     </div>

@@ -1,283 +1,992 @@
 [
-{
-"id":1,
-"image":"https://i.ibb.co.com/8LyQ4Gp6/Screenshot-2026-03-16-224517.jpg",
-"title":"TaskFlow",
-"companyName":"Productive Labs",
-"description":"A simple productivity app to manage tasks and daily goals efficiently.",
-"size":35,
-"reviews":1200,
-"ratingAvg":4.4,
-"downloads":50000,
-"ratings":[
-{"name":"1 star","count":40},
-{"name":"2 star","count":60},
-{"name":"3 star","count":200},
-{"name":"4 star","count":500},
-{"name":"5 star","count":400}
-]
-},
-{
-"id":2,
-"image":"https://i.ibb.co.com/RG4Wzv61/Screenshot-2026-03-16-224807.jpg",
-"title":"PhotoMaster",
-"companyName":"Pixel Studio",
-"description":"Advanced photo editing app with filters, layers and AI enhancement.",
-"size":78,
-"reviews":980,
-"ratingAvg":4.2,
-"downloads":80000,
-"ratings":[
-{"name":"1 star","count":30},
-{"name":"2 star","count":70},
-{"name":"3 star","count":180},
-{"name":"4 star","count":400},
-{"name":"5 star","count":300}
-]
-},
-{
-"id":3,
-"image":"https://i.ibb.co.com/tpntbpP8/Screenshot-2026-03-16-224852.jpg",
-"title":"FitTrack",
-"companyName":"HealthTech",
-"description":"Track your workouts, calories and fitness progress easily.",
-"size":42,
-"reviews":870,
-"ratingAvg":4.3,
-"downloads":60000,
-"ratings":[
-{"name":"1 star","count":20},
-{"name":"2 star","count":50},
-{"name":"3 star","count":150},
-{"name":"4 star","count":400},
-{"name":"5 star","count":250}
-]
-},
-{
-"id":4,
-"image":"https://i.ibb.co.com/RTXMTX4M/Screenshot-2026-03-16-224932.jpg",
-"title":"BudgetWise",
-"companyName":"FinEdge",
-"description":"Manage expenses, track income and plan your monthly budget.",
-"size":28,
-"reviews":640,
-"ratingAvg":4.1,
-"downloads":45000,
-"ratings":[
-{"name":"1 star","count":25},
-{"name":"2 star","count":45},
-{"name":"3 star","count":140},
-{"name":"4 star","count":260},
-{"name":"5 star","count":170}
-]
-},
-{
-"id":5,
-"image":"https://i.ibb.co.com/d013Drnc/Screenshot-2026-03-16-225009.jpg",
-"title":"TravelMate",
-"companyName":"Globe Apps",
-"description":"Discover destinations, plan trips and organize travel itineraries.",
-"size":55,
-"reviews":740,
-"ratingAvg":4.5,
-"downloads":90000,
-"ratings":[
-{"name":"1 star","count":15},
-{"name":"2 star","count":35},
-{"name":"3 star","count":120},
-{"name":"4 star","count":300},
-{"name":"5 star","count":270}
-]
-},
-{
-"id":6,
-"image":"https://i.ibb.co.com/JRdBs6zq/Screenshot-2026-03-16-225051.jpg",
-"title":"CodeNote",
-"companyName":"DevTools Inc",
-"description":"A note-taking app designed specifically for developers.",
-"size":22,
-"reviews":510,
-"ratingAvg":4.0,
-"downloads":35000,
-"ratings":[
-{"name":"1 star","count":30},
-{"name":"2 star","count":50},
-{"name":"3 star","count":130},
-{"name":"4 star","count":190},
-{"name":"5 star","count":110}
-]
-},
-{
-"id":7,
-"image":"https://i.ibb.co.com/6cwTVhXh/Screenshot-2026-03-16-225133.jpg",
-"title":"MeditateNow",
-"companyName":"CalmMind",
-"description":"Guided meditation sessions for stress relief and focus.",
-"size":33,
-"reviews":430,
-"ratingAvg":4.6,
-"downloads":30000,
-"ratings":[
-{"name":"1 star","count":10},
-{"name":"2 star","count":20},
-{"name":"3 star","count":70},
-{"name":"4 star","count":150},
-{"name":"5 star","count":180}
-]
-},
-{
-"id":8,
-"image":"https://i.ibb.co.com/mVHvLgGj/Screenshot-2026-03-16-225209.jpg",
-"title":"RecipeHub",
-"companyName":"Kitchen Labs",
-"description":"Find thousands of recipes and cooking tutorials.",
-"size":48,
-"reviews":690,
-"ratingAvg":4.3,
-"downloads":72000,
-"ratings":[
-{"name":"1 star","count":18},
-{"name":"2 star","count":40},
-{"name":"3 star","count":160},
-{"name":"4 star","count":280},
-{"name":"5 star","count":192}
-]
-},
-{
-"id":9,
-"image":"https://i.ibb.co.com/TS4PW3V/Screenshot-2026-03-16-225307.jpg",
-"title":"WeatherCast",
-"companyName":"SkyData",
-"description":"Real-time weather forecasts and alerts for your location.",
-"size":19,
-"reviews":900,
-"ratingAvg":4.2,
-"downloads":110000,
-"ratings":[
-{"name":"1 star","count":50},
-{"name":"2 star","count":80},
-{"name":"3 star","count":210},
-{"name":"4 star","count":360},
-{"name":"5 star","count":200}
-]
-},
-{
-"id":10,
-"image":"https://i.ibb.co.com/XZRJVSD5/Screenshot-2026-03-16-225350.jpg",
-"title":"StudyPlanner",
-"companyName":"EduTech",
-"description":"Plan study schedules and manage assignments easily.",
-"size":26,
-"reviews":580,
-"ratingAvg":4.4,
-"downloads":47000,
-"ratings":[
-{"name":"1 star","count":12},
-{"name":"2 star","count":30},
-{"name":"3 star","count":120},
-{"name":"4 star","count":260},
-{"name":"5 star","count":158}
-]
-},
-
-{
-"id":11,"image":"https://i.ibb.co.com/PkY79CW/Screenshot-2026-03-16-225430.jpg","title":"NoteStack","companyName":"SmartSoft","description":"Minimalist note taking application.","size":18,"reviews":300,"ratingAvg":4.1,"downloads":20000,
-"ratings":[{"name":"1 star","count":15},{"name":"2 star","count":25},{"name":"3 star","count":70},{"name":"4 star","count":120},{"name":"5 star","count":70}]
-},
-
-{
-"id":12,"image":"https://i.ibb.co.com/VcykfysV/Screenshot-2026-03-16-225503.jpg","title":"RunTracker","companyName":"FitLabs","description":"Track your running routes and speed.","size":36,"reviews":420,"ratingAvg":4.3,"downloads":26000,
-"ratings":[{"name":"1 star","count":10},{"name":"2 star","count":30},{"name":"3 star","count":80},{"name":"4 star","count":180},{"name":"5 star","count":120}]
-},
-
-{
-"id":13,"image":"https://i.ibb.co.com/gb5qHgS9/Screenshot-2026-03-16-225539.jpg","title":"LanguageLeap","companyName":"EduGlobal","description":"Learn new languages with daily lessons.","size":60,"reviews":710,"ratingAvg":4.5,"downloads":83000,
-"ratings":[{"name":"1 star","count":20},{"name":"2 star","count":35},{"name":"3 star","count":140},{"name":"4 star","count":310},{"name":"5 star","count":205}]
-},
-
-{
-"id":14,"image":"https://i.ibb.co.com/fYW4FYcw/Screenshot-2026-03-16-225612.jpg","title":"FocusTimer","companyName":"DeepWork","description":"Pomodoro timer to increase productivity.","size":14,"reviews":290,"ratingAvg":4.2,"downloads":22000,
-"ratings":[{"name":"1 star","count":12},{"name":"2 star","count":22},{"name":"3 star","count":60},{"name":"4 star","count":120},{"name":"5 star","count":76}]
-},
-
-{
-"id":15,"image":"https://i.ibb.co.com/YTj2twnS/Screenshot-2026-03-16-225644.jpg","title":"NewsPulse","companyName":"DailyMedia","description":"Latest global news in one place.","size":31,"reviews":860,"ratingAvg":4.0,"downloads":95000,
-"ratings":[{"name":"1 star","count":60},{"name":"2 star","count":90},{"name":"3 star","count":210},{"name":"4 star","count":330},{"name":"5 star","count":170}]
-},
-
-{
-"id":16,"image":"https://i.ibb.co.com/xKcGMKB9/Screenshot-2026-03-16-225718.jpg","title":"MapGuide","companyName":"GeoTech","description":"Offline maps and navigation assistance.","size":70,"reviews":540,"ratingAvg":4.3,"downloads":68000,
-"ratings":[{"name":"1 star","count":20},{"name":"2 star","count":40},{"name":"3 star","count":120},{"name":"4 star","count":230},{"name":"5 star","count":130}]
-},
-
-{
-"id":17,"image":"https://i.ibb.co.com/WWKYRZVq/Screenshot-2026-03-16-225757.jpg","title":"SleepBetter","companyName":"Wellness Co","description":"Improve sleep with relaxing sounds.","size":40,"reviews":380,"ratingAvg":4.6,"downloads":34000,
-"ratings":[{"name":"1 star","count":8},{"name":"2 star","count":20},{"name":"3 star","count":60},{"name":"4 star","count":140},{"name":"5 star","count":152}]
-},
-
-{
-"id":18,"image":"https://i.ibb.co.com/G333H6vD/Screenshot-2026-03-16-225833.jpg","title":"MusicMix","companyName":"SoundWave","description":"Stream and organize your music library.","size":95,"reviews":1200,"ratingAvg":4.4,"downloads":150000,
-"ratings":[{"name":"1 star","count":40},{"name":"2 star","count":80},{"name":"3 star","count":260},{"name":"4 star","count":500},{"name":"5 star","count":320}]
-},
-
-{
-"id":19,"image":"https://i.ibb.co.com/Q0tFjdk/Screenshot-2026-03-16-225922.jpg","title":"ArtSketch","companyName":"Creative Labs","description":"Digital sketchbook for artists.","size":52,"reviews":460,"ratingAvg":4.5,"downloads":41000,
-"ratings":[{"name":"1 star","count":15},{"name":"2 star","count":25},{"name":"3 star","count":90},{"name":"4 star","count":180},{"name":"5 star","count":150}]
-},
-
-{
-"id":20,"image":"https://i.ibb.co.com/svy9CJx9/Screenshot-2026-03-16-225957.jpg","title":"PlantCare","companyName":"GreenTech","description":"Track and manage plant watering schedules.","size":24,"reviews":310,"ratingAvg":4.3,"downloads":25000,
-"ratings":[{"name":"1 star","count":9},{"name":"2 star","count":18},{"name":"3 star","count":70},{"name":"4 star","count":130},{"name":"5 star","count":83}]
-},
-
-{
-"id":21,"image":"https://i.ibb.co.com/ynjWnG0g/Screenshot-2026-03-16-230028.jpg","title":"CryptoWatch","companyName":"FinChain","description":"Monitor cryptocurrency prices in real time.","size":34,"reviews":690,"ratingAvg":4.2,"downloads":72000,
-"ratings":[{"name":"1 star","count":25},{"name":"2 star","count":55},{"name":"3 star","count":170},{"name":"4 star","count":280},{"name":"5 star","count":160}]
-},
-
-{
-"id":22,"image":"https://i.ibb.co.com/sp2KdX94/Screenshot-2026-03-16-230102.jpg","title":"BookShelf","companyName":"ReadersHub","description":"Track books you read and discover new titles.","size":29,"reviews":480,"ratingAvg":4.4,"downloads":39000,
-"ratings":[{"name":"1 star","count":12},{"name":"2 star","count":20},{"name":"3 star","count":90},{"name":"4 star","count":210},{"name":"5 star","count":148}]
-},
-
-{
-"id":23,"image":"https://i.ibb.co.com/FqhxMLhC/Screenshot-2026-03-16-230135.jpg","title":"GameStats","companyName":"PlayLabs","description":"Analyze game performance and statistics.","size":44,"reviews":350,"ratingAvg":4.1,"downloads":30000,
-"ratings":[{"name":"1 star","count":18},{"name":"2 star","count":30},{"name":"3 star","count":90},{"name":"4 star","count":140},{"name":"5 star","count":72}]
-},
-
-{
-"id":24,"image":"https://i.ibb.co.com/nMYx4wkp/Screenshot-2026-03-16-230206.jpg","title":"ShopSmart","companyName":"RetailTech","description":"Compare product prices across online stores.","size":37,"reviews":540,"ratingAvg":4.2,"downloads":56000,
-"ratings":[{"name":"1 star","count":20},{"name":"2 star","count":40},{"name":"3 star","count":120},{"name":"4 star","count":240},{"name":"5 star","count":120}]
-},
-
-{
-"id":25,"image":"https://example.com/images/app25.png","title":"VoiceNote","companyName":"AudioTech","description":"Record voice notes and convert to text.","size":27,"reviews":390,"ratingAvg":4.3,"downloads":32000,
-"ratings":[{"name":"1 star","count":10},{"name":"2 star","count":25},{"name":"3 star","count":85},{"name":"4 star","count":160},{"name":"5 star","count":110}]
-},
-
-{
-"id":26,"image":"https://example.com/images/app26.png","title":"PetCare","companyName":"AnimalTech","description":"Manage your pet health records.","size":30,"reviews":260,"ratingAvg":4.4,"downloads":21000,
-"ratings":[{"name":"1 star","count":7},{"name":"2 star","count":15},{"name":"3 star","count":50},{"name":"4 star","count":110},{"name":"5 star","count":78}]
-},
-
-{
-"id":27,"image":"https://example.com/images/app27.png","title":"EventPlanner","companyName":"PlanIt","description":"Plan and organize events easily.","size":46,"reviews":370,"ratingAvg":4.2,"downloads":28000,
-"ratings":[{"name":"1 star","count":14},{"name":"2 star","count":30},{"name":"3 star","count":90},{"name":"4 star","count":150},{"name":"5 star","count":86}]
-},
-
-{
-"id":28,"image":"https://example.com/images/app28.png","title":"SecureVault","companyName":"CyberSafe","description":"Store passwords and sensitive data securely.","size":25,"reviews":610,"ratingAvg":4.5,"downloads":65000,
-"ratings":[{"name":"1 star","count":15},{"name":"2 star","count":20},{"name":"3 star","count":110},{"name":"4 star","count":280},{"name":"5 star","count":185}]
-},
-
-{
-"id":29,"image":"https://example.com/images/app29.png","title":"HabitBuilder","companyName":"LifeTrack","description":"Build positive habits with daily reminders.","size":23,"reviews":450,"ratingAvg":4.4,"downloads":36000,
-"ratings":[{"name":"1 star","count":10},{"name":"2 star","count":18},{"name":"3 star","count":95},{"name":"4 star","count":190},{"name":"5 star","count":137}]
-},
-
-{
-"id":30,"image":"https://example.com/images/app30.png","title":"MindMap Pro","companyName":"IdeaWorks","description":"Create mind maps for brainstorming ideas.","size":38,"reviews":320,"ratingAvg":4.3,"downloads":27000,
-"ratings":[{"name":"1 star","count":9},{"name":"2 star","count":19},{"name":"3 star","count":70},{"name":"4 star","count":150},{"name":"5 star","count":72}]
-}
-
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/8LyQ4Gp6/Screenshot-2026-03-16-224517.jpg",
+    "title": "TaskFlow",
+    "companyName": "Productive Labs",
+    "description": "TaskFlow is built to help you get results faster without extra clutter.\nCreated by Productive Labs, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 35,
+    "reviews": 1200,
+    "ratingAvg": 4.4,
+    "downloads": 50000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 40
+      },
+      {
+        "name": "2 star",
+        "count": 60
+      },
+      {
+        "name": "3 star",
+        "count": 200
+      },
+      {
+        "name": "4 star",
+        "count": 500
+      },
+      {
+        "name": "5 star",
+        "count": 400
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/RG4Wzv61/Screenshot-2026-03-16-224807.jpg",
+    "title": "PhotoMaster",
+    "companyName": "Pixel Studio",
+    "description": "PhotoMaster is built to help you get results faster without extra clutter.\nCreated by Pixel Studio, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 78,
+    "reviews": 980,
+    "ratingAvg": 4.2,
+    "downloads": 80000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 30
+      },
+      {
+        "name": "2 star",
+        "count": 70
+      },
+      {
+        "name": "3 star",
+        "count": 180
+      },
+      {
+        "name": "4 star",
+        "count": 400
+      },
+      {
+        "name": "5 star",
+        "count": 300
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/tpntbpP8/Screenshot-2026-03-16-224852.jpg",
+    "title": "FitTrack",
+    "companyName": "HealthTech",
+    "description": "FitTrack is built to help you get results faster without extra clutter.\nCreated by HealthTech, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 42,
+    "reviews": 870,
+    "ratingAvg": 4.3,
+    "downloads": 60000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 20
+      },
+      {
+        "name": "2 star",
+        "count": 50
+      },
+      {
+        "name": "3 star",
+        "count": 150
+      },
+      {
+        "name": "4 star",
+        "count": 400
+      },
+      {
+        "name": "5 star",
+        "count": 250
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/RTXMTX4M/Screenshot-2026-03-16-224932.jpg",
+    "title": "BudgetWise",
+    "companyName": "FinEdge",
+    "description": "BudgetWise is built to help you get results faster without extra clutter.\nCreated by FinEdge, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 28,
+    "reviews": 640,
+    "ratingAvg": 4.1,
+    "downloads": 45000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 25
+      },
+      {
+        "name": "2 star",
+        "count": 45
+      },
+      {
+        "name": "3 star",
+        "count": 140
+      },
+      {
+        "name": "4 star",
+        "count": 260
+      },
+      {
+        "name": "5 star",
+        "count": 170
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/d013Drnc/Screenshot-2026-03-16-225009.jpg",
+    "title": "TravelMate",
+    "companyName": "Globe Apps",
+    "description": "TravelMate is built to help you get results faster without extra clutter.\nCreated by Globe Apps, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 55,
+    "reviews": 740,
+    "ratingAvg": 4.5,
+    "downloads": 90000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 15
+      },
+      {
+        "name": "2 star",
+        "count": 35
+      },
+      {
+        "name": "3 star",
+        "count": 120
+      },
+      {
+        "name": "4 star",
+        "count": 300
+      },
+      {
+        "name": "5 star",
+        "count": 270
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/JRdBs6zq/Screenshot-2026-03-16-225051.jpg",
+    "title": "CodeNote",
+    "companyName": "DevTools Inc",
+    "description": "CodeNote is built to help you get results faster without extra clutter.\nCreated by DevTools Inc, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 22,
+    "reviews": 510,
+    "ratingAvg": 4.0,
+    "downloads": 35000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 30
+      },
+      {
+        "name": "2 star",
+        "count": 50
+      },
+      {
+        "name": "3 star",
+        "count": 130
+      },
+      {
+        "name": "4 star",
+        "count": 190
+      },
+      {
+        "name": "5 star",
+        "count": 110
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/6cwTVhXh/Screenshot-2026-03-16-225133.jpg",
+    "title": "MeditateNow",
+    "companyName": "CalmMind",
+    "description": "MeditateNow is built to help you get results faster without extra clutter.\nCreated by CalmMind, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 33,
+    "reviews": 430,
+    "ratingAvg": 4.6,
+    "downloads": 30000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 10
+      },
+      {
+        "name": "2 star",
+        "count": 20
+      },
+      {
+        "name": "3 star",
+        "count": 70
+      },
+      {
+        "name": "4 star",
+        "count": 150
+      },
+      {
+        "name": "5 star",
+        "count": 180
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/mVHvLgGj/Screenshot-2026-03-16-225209.jpg",
+    "title": "RecipeHub",
+    "companyName": "Kitchen Labs",
+    "description": "RecipeHub is built to help you get results faster without extra clutter.\nCreated by Kitchen Labs, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 48,
+    "reviews": 690,
+    "ratingAvg": 4.3,
+    "downloads": 72000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 18
+      },
+      {
+        "name": "2 star",
+        "count": 40
+      },
+      {
+        "name": "3 star",
+        "count": 160
+      },
+      {
+        "name": "4 star",
+        "count": 280
+      },
+      {
+        "name": "5 star",
+        "count": 192
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/TS4PW3V/Screenshot-2026-03-16-225307.jpg",
+    "title": "WeatherCast",
+    "companyName": "SkyData",
+    "description": "WeatherCast is built to help you get results faster without extra clutter.\nCreated by SkyData, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 19,
+    "reviews": 900,
+    "ratingAvg": 4.2,
+    "downloads": 110000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 50
+      },
+      {
+        "name": "2 star",
+        "count": 80
+      },
+      {
+        "name": "3 star",
+        "count": 210
+      },
+      {
+        "name": "4 star",
+        "count": 360
+      },
+      {
+        "name": "5 star",
+        "count": 200
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/XZRJVSD5/Screenshot-2026-03-16-225350.jpg",
+    "title": "StudyPlanner",
+    "companyName": "EduTech",
+    "description": "StudyPlanner is built to help you get results faster without extra clutter.\nCreated by EduTech, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 26,
+    "reviews": 580,
+    "ratingAvg": 4.4,
+    "downloads": 47000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 12
+      },
+      {
+        "name": "2 star",
+        "count": 30
+      },
+      {
+        "name": "3 star",
+        "count": 120
+      },
+      {
+        "name": "4 star",
+        "count": 260
+      },
+      {
+        "name": "5 star",
+        "count": 158
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/PkY79CW/Screenshot-2026-03-16-225430.jpg",
+    "title": "NoteStack",
+    "companyName": "SmartSoft",
+    "description": "NoteStack is built to help you get results faster without extra clutter.\nCreated by SmartSoft, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 18,
+    "reviews": 300,
+    "ratingAvg": 4.1,
+    "downloads": 20000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 15
+      },
+      {
+        "name": "2 star",
+        "count": 25
+      },
+      {
+        "name": "3 star",
+        "count": 70
+      },
+      {
+        "name": "4 star",
+        "count": 120
+      },
+      {
+        "name": "5 star",
+        "count": 70
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/VcykfysV/Screenshot-2026-03-16-225503.jpg",
+    "title": "RunTracker",
+    "companyName": "FitLabs",
+    "description": "RunTracker is built to help you get results faster without extra clutter.\nCreated by FitLabs, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 36,
+    "reviews": 420,
+    "ratingAvg": 4.3,
+    "downloads": 26000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 10
+      },
+      {
+        "name": "2 star",
+        "count": 30
+      },
+      {
+        "name": "3 star",
+        "count": 80
+      },
+      {
+        "name": "4 star",
+        "count": 180
+      },
+      {
+        "name": "5 star",
+        "count": 120
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co.com/gb5qHgS9/Screenshot-2026-03-16-225539.jpg",
+    "title": "LanguageLeap",
+    "companyName": "EduGlobal",
+    "description": "LanguageLeap is built to help you get results faster without extra clutter.\nCreated by EduGlobal, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 60,
+    "reviews": 710,
+    "ratingAvg": 4.5,
+    "downloads": 83000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 20
+      },
+      {
+        "name": "2 star",
+        "count": 35
+      },
+      {
+        "name": "3 star",
+        "count": 140
+      },
+      {
+        "name": "4 star",
+        "count": 310
+      },
+      {
+        "name": "5 star",
+        "count": 205
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co.com/fYW4FYcw/Screenshot-2026-03-16-225612.jpg",
+    "title": "FocusTimer",
+    "companyName": "DeepWork",
+    "description": "FocusTimer is built to help you get results faster without extra clutter.\nCreated by DeepWork, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 14,
+    "reviews": 290,
+    "ratingAvg": 4.2,
+    "downloads": 22000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 12
+      },
+      {
+        "name": "2 star",
+        "count": 22
+      },
+      {
+        "name": "3 star",
+        "count": 60
+      },
+      {
+        "name": "4 star",
+        "count": 120
+      },
+      {
+        "name": "5 star",
+        "count": 76
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co.com/YTj2twnS/Screenshot-2026-03-16-225644.jpg",
+    "title": "NewsPulse",
+    "companyName": "DailyMedia",
+    "description": "NewsPulse is built to help you get results faster without extra clutter.\nCreated by DailyMedia, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 31,
+    "reviews": 860,
+    "ratingAvg": 4.0,
+    "downloads": 95000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 60
+      },
+      {
+        "name": "2 star",
+        "count": 90
+      },
+      {
+        "name": "3 star",
+        "count": 210
+      },
+      {
+        "name": "4 star",
+        "count": 330
+      },
+      {
+        "name": "5 star",
+        "count": 170
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co.com/xKcGMKB9/Screenshot-2026-03-16-225718.jpg",
+    "title": "MapGuide",
+    "companyName": "GeoTech",
+    "description": "MapGuide is built to help you get results faster without extra clutter.\nCreated by GeoTech, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 70,
+    "reviews": 540,
+    "ratingAvg": 4.3,
+    "downloads": 68000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 20
+      },
+      {
+        "name": "2 star",
+        "count": 40
+      },
+      {
+        "name": "3 star",
+        "count": 120
+      },
+      {
+        "name": "4 star",
+        "count": 230
+      },
+      {
+        "name": "5 star",
+        "count": 130
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co.com/WWKYRZVq/Screenshot-2026-03-16-225757.jpg",
+    "title": "SleepBetter",
+    "companyName": "Wellness Co",
+    "description": "SleepBetter is built to help you get results faster without extra clutter.\nCreated by Wellness Co, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 40,
+    "reviews": 380,
+    "ratingAvg": 4.6,
+    "downloads": 34000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 8
+      },
+      {
+        "name": "2 star",
+        "count": 20
+      },
+      {
+        "name": "3 star",
+        "count": 60
+      },
+      {
+        "name": "4 star",
+        "count": 140
+      },
+      {
+        "name": "5 star",
+        "count": 152
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co.com/G333H6vD/Screenshot-2026-03-16-225833.jpg",
+    "title": "MusicMix",
+    "companyName": "SoundWave",
+    "description": "MusicMix is built to help you get results faster without extra clutter.\nCreated by SoundWave, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 95,
+    "reviews": 1200,
+    "ratingAvg": 4.4,
+    "downloads": 150000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 40
+      },
+      {
+        "name": "2 star",
+        "count": 80
+      },
+      {
+        "name": "3 star",
+        "count": 260
+      },
+      {
+        "name": "4 star",
+        "count": 500
+      },
+      {
+        "name": "5 star",
+        "count": 320
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co.com/Q0tFjdk/Screenshot-2026-03-16-225922.jpg",
+    "title": "ArtSketch",
+    "companyName": "Creative Labs",
+    "description": "ArtSketch is built to help you get results faster without extra clutter.\nCreated by Creative Labs, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 52,
+    "reviews": 460,
+    "ratingAvg": 4.5,
+    "downloads": 41000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 15
+      },
+      {
+        "name": "2 star",
+        "count": 25
+      },
+      {
+        "name": "3 star",
+        "count": 90
+      },
+      {
+        "name": "4 star",
+        "count": 180
+      },
+      {
+        "name": "5 star",
+        "count": 150
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co.com/svy9CJx9/Screenshot-2026-03-16-225957.jpg",
+    "title": "PlantCare",
+    "companyName": "GreenTech",
+    "description": "PlantCare is built to help you get results faster without extra clutter.\nCreated by GreenTech, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 24,
+    "reviews": 310,
+    "ratingAvg": 4.3,
+    "downloads": 25000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 9
+      },
+      {
+        "name": "2 star",
+        "count": 18
+      },
+      {
+        "name": "3 star",
+        "count": 70
+      },
+      {
+        "name": "4 star",
+        "count": 130
+      },
+      {
+        "name": "5 star",
+        "count": 83
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://i.ibb.co.com/ynjWnG0g/Screenshot-2026-03-16-230028.jpg",
+    "title": "CryptoWatch",
+    "companyName": "FinChain",
+    "description": "CryptoWatch is built to help you get results faster without extra clutter.\nCreated by FinChain, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 34,
+    "reviews": 690,
+    "ratingAvg": 4.2,
+    "downloads": 72000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 25
+      },
+      {
+        "name": "2 star",
+        "count": 55
+      },
+      {
+        "name": "3 star",
+        "count": 170
+      },
+      {
+        "name": "4 star",
+        "count": 280
+      },
+      {
+        "name": "5 star",
+        "count": 160
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://i.ibb.co.com/sp2KdX94/Screenshot-2026-03-16-230102.jpg",
+    "title": "BookShelf",
+    "companyName": "ReadersHub",
+    "description": "BookShelf is built to help you get results faster without extra clutter.\nCreated by ReadersHub, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 29,
+    "reviews": 480,
+    "ratingAvg": 4.4,
+    "downloads": 39000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 12
+      },
+      {
+        "name": "2 star",
+        "count": 20
+      },
+      {
+        "name": "3 star",
+        "count": 90
+      },
+      {
+        "name": "4 star",
+        "count": 210
+      },
+      {
+        "name": "5 star",
+        "count": 148
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://i.ibb.co.com/FqhxMLhC/Screenshot-2026-03-16-230135.jpg",
+    "title": "GameStats",
+    "companyName": "PlayLabs",
+    "description": "GameStats is built to help you get results faster without extra clutter.\nCreated by PlayLabs, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 44,
+    "reviews": 350,
+    "ratingAvg": 4.1,
+    "downloads": 30000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 18
+      },
+      {
+        "name": "2 star",
+        "count": 30
+      },
+      {
+        "name": "3 star",
+        "count": 90
+      },
+      {
+        "name": "4 star",
+        "count": 140
+      },
+      {
+        "name": "5 star",
+        "count": 72
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "image": "https://i.ibb.co.com/nMYx4wkp/Screenshot-2026-03-16-230206.jpg",
+    "title": "ShopSmart",
+    "companyName": "RetailTech",
+    "description": "ShopSmart is built to help you get results faster without extra clutter.\nCreated by RetailTech, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 37,
+    "reviews": 540,
+    "ratingAvg": 4.2,
+    "downloads": 56000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 20
+      },
+      {
+        "name": "2 star",
+        "count": 40
+      },
+      {
+        "name": "3 star",
+        "count": 120
+      },
+      {
+        "name": "4 star",
+        "count": 240
+      },
+      {
+        "name": "5 star",
+        "count": 120
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "image": "https://example.com/images/app25.png",
+    "title": "VoiceNote",
+    "companyName": "AudioTech",
+    "description": "VoiceNote is built to help you get results faster without extra clutter.\nCreated by AudioTech, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 27,
+    "reviews": 390,
+    "ratingAvg": 4.3,
+    "downloads": 32000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 10
+      },
+      {
+        "name": "2 star",
+        "count": 25
+      },
+      {
+        "name": "3 star",
+        "count": 85
+      },
+      {
+        "name": "4 star",
+        "count": 160
+      },
+      {
+        "name": "5 star",
+        "count": 110
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "image": "https://example.com/images/app26.png",
+    "title": "PetCare",
+    "companyName": "AnimalTech",
+    "description": "PetCare is built to help you get results faster without extra clutter.\nCreated by AnimalTech, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 30,
+    "reviews": 260,
+    "ratingAvg": 4.4,
+    "downloads": 21000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 7
+      },
+      {
+        "name": "2 star",
+        "count": 15
+      },
+      {
+        "name": "3 star",
+        "count": 50
+      },
+      {
+        "name": "4 star",
+        "count": 110
+      },
+      {
+        "name": "5 star",
+        "count": 78
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "image": "https://example.com/images/app27.png",
+    "title": "EventPlanner",
+    "companyName": "PlanIt",
+    "description": "EventPlanner is built to help you get results faster without extra clutter.\nCreated by PlanIt, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 46,
+    "reviews": 370,
+    "ratingAvg": 4.2,
+    "downloads": 28000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 14
+      },
+      {
+        "name": "2 star",
+        "count": 30
+      },
+      {
+        "name": "3 star",
+        "count": 90
+      },
+      {
+        "name": "4 star",
+        "count": 150
+      },
+      {
+        "name": "5 star",
+        "count": 86
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "image": "https://example.com/images/app28.png",
+    "title": "SecureVault",
+    "companyName": "CyberSafe",
+    "description": "SecureVault is built to help you get results faster without extra clutter.\nCreated by CyberSafe, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 25,
+    "reviews": 610,
+    "ratingAvg": 4.5,
+    "downloads": 65000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 15
+      },
+      {
+        "name": "2 star",
+        "count": 20
+      },
+      {
+        "name": "3 star",
+        "count": 110
+      },
+      {
+        "name": "4 star",
+        "count": 280
+      },
+      {
+        "name": "5 star",
+        "count": 185
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "image": "https://example.com/images/app29.png",
+    "title": "HabitBuilder",
+    "companyName": "LifeTrack",
+    "description": "HabitBuilder is built to help you get results faster without extra clutter.\nCreated by LifeTrack, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 23,
+    "reviews": 450,
+    "ratingAvg": 4.4,
+    "downloads": 36000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 10
+      },
+      {
+        "name": "2 star",
+        "count": 18
+      },
+      {
+        "name": "3 star",
+        "count": 95
+      },
+      {
+        "name": "4 star",
+        "count": 190
+      },
+      {
+        "name": "5 star",
+        "count": 137
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "image": "https://example.com/images/app30.png",
+    "title": "MindMap Pro",
+    "companyName": "IdeaWorks",
+    "description": "MindMap Pro is built to help you get results faster without extra clutter.\nCreated by IdeaWorks, it focuses on reliability and a clean daily workflow.\nExplore core tools that are easy to learn but powerful in use.\nCustomize settings to match your habits and keep everything organized.\nPerformance is optimized so it stays smooth even on busy days.\nStart using it right away and grow into the deeper features over time.",
+    "size": 38,
+    "reviews": 320,
+    "ratingAvg": 4.3,
+    "downloads": 27000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 9
+      },
+      {
+        "name": "2 star",
+        "count": 19
+      },
+      {
+        "name": "3 star",
+        "count": 70
+      },
+      {
+        "name": "4 star",
+        "count": 150
+      },
+      {
+        "name": "5 star",
+        "count": 72
+      }
+    ]
+  }
 ]

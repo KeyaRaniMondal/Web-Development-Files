@@ -10,6 +10,7 @@ import AppDetails from './Pages/AppDetails.jsx'
 import Error from './Pages/Error.jsx'
 import Installation from './Pages/Installation.jsx'
 import { Toaster } from 'react-hot-toast'
+import Loading from './Components/Shared/Loading.jsx'
 
 const router = createBrowserRouter([
   {
@@ -71,7 +72,7 @@ const router = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} fallbackElement={<Loading />} />
     <Toaster/>
   </StrictMode>,
 )

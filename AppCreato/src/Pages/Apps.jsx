@@ -27,7 +27,7 @@ const Apps = ({ apps: appsProp }) => {
     };
 
     return (
-        <div >
+        <div className='px-4'>
             {isStandalonePage && (
                 <div className='text-center justify-center mt-10'>
                     <h1 className='text-4xl font-bold '>Our All Applications</h1>
@@ -37,7 +37,7 @@ const Apps = ({ apps: appsProp }) => {
 
             {
                 isStandalonePage && loaderApps.length ? (
-                    <div className='flex justify-between items-center mt-10 w-[1440px] mx-auto'>
+                    <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mt-10 max-w-screen-xl mx-auto'>
                         <div className='font-semibold text-2xl'>
                             ({apps.length}) Apps Found
                         </div>
@@ -50,7 +50,7 @@ const Apps = ({ apps: appsProp }) => {
                                     placeholder="Search Apps..."
                                     value={searchQuery}
                                     onChange={handleSearch}
-                                    className='border-1 rounded pl-10 pr-4 py-2'
+                                    className='border-1 rounded pl-10 pr-4 py-2 w-full sm:w-64'
                                 />
                                 <CiSearch className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400' />
                             </div>
@@ -60,22 +60,22 @@ const Apps = ({ apps: appsProp }) => {
             }
 
 
-            <div className='grid grid-cols-4 gap-5 bg-base-300 w-[1440px] mx-auto mt-10 mb-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 bg-base-300 max-w-screen-xl mx-auto mt-10 mb-10 p-4 rounded'>
                 {
                     apps.map(product => (
                         <Link
                             key={product.id}
                             to={`/apps/app/${product.id}`}
-                            className="card bg-white w-[348px] h-[435px] shadow-2xl hover:shadow-3xl transition-shadow"
+                            className="card bg-white w-full shadow-2xl hover:shadow-3xl transition-shadow"
                         >
                             <figure className="p-5">
                                 <img
                                     src={product.image}
                                     alt={product.title}
-                                    className="rounded-xl w-80 h-[300px] object-cover border-2"
+                                    className="rounded-xl w-full h-60 sm:h-64 object-cover border-2"
                                 />
                             </figure>
-                            <div className="card-body items-center text-left mx-10 ">
+                            <div className="card-body items-center text-left mx-10 mb-5">
                                 <h2 className="card-title mb-4">{product.title}</h2>
                                 <div className='flex justify-between'>
                                     <span className='flex items-center gap-2 text-[#00D390] bg-[#def6ee] rounded-md p-2'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -42,16 +42,16 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 gap-2">{links}</ul>
       </div>
 
- 
-        <button className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white flex items-center gap-2 p-2 rounded-md">
-          <FaGithub />
-          Contribute
-        </button>
+
+      <Link to='https://github.com/KeyaRaniMondal' target='_blank' className="hidden lg:flex btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white items-center gap-2 p-2 rounded-md ">
+        <FaGithub />
+        Contribute
+      </Link>
 
 
       <div className="navbar-end lg:hidden">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost btn-square">
+        <details className="dropdown dropdown-end">
+          <summary className="btn btn-ghost btn-square list-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -61,14 +61,20 @@ const Navbar = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-          >
+          </summary>
+
+          <ul className="dropdown-content menu absolute right-0 mt-3 p-2 shadow bg-white z-[50] rounded-box w-52">
             {links}
+            <Link
+              to='https://github.com/KeyaRaniMondal'
+              target='_blank'
+              className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white flex items-center gap-2 p-2 mt-3 rounded-md"
+            >
+              <FaGithub />
+              Contribute
+            </Link>
           </ul>
-        </div>
+        </details>
       </div>
     </div>
   );

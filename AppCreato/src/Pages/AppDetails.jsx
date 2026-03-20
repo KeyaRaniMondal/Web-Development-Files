@@ -16,10 +16,10 @@ const AppDetails = () => {
     if (!details) {
         return (
             <div className="max-w-4xl mx-auto mt-10 bg-base-300 p-8 rounded-xl justify-center items-center text-center">
-                <img src={appError} alt="App not found" className='w-[750px] h-[500px] object-cover' />
+                <img src={appError} alt="App not found" className='w-full max-w-3xl h-auto object-cover mx-auto' />
                 <h2 className="text-5xl font-bold my-5">OPPS!! App not found</h2>
                 <p className="mt-2 text-gray-600">The App you are requesting is not found on our system.  please try another apps</p>
-                <button className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white gap-2 py-2 px-4 my-5 ">
+                <button onClick={() => navigate(-1)} className="btn btn-outline btn-primary bg-gradient-to-r from-purple-600 to-purple-400 text-white gap-2 py-2 px-4 my-5 ">
                     Go Back!
                 </button>
             </div>
@@ -37,17 +37,17 @@ const AppDetails = () => {
     }
 
     return (
-        <div className='w-[1440px] bg-base-300 mx-auto mt-10'>
-            <div className='flex justify-left gap-10'>
+        <div className='max-w-screen-xl w-full bg-base-300 mx-auto mt-10 px-4 py-6 rounded'>
+            <div className='flex flex-col lg:flex-row justify-left gap-8'>
                 <div>
-                    <img src={details.image} alt={details.title} className='w-[350px] h-[350px]' />
+                    <img src={details.image} alt={details.title} className='w-full max-w-sm h-auto' />
                 </div>
                 <div>
                     <div>
                         <h1 className='text-[#001931] font-bold text-3xl'>{details.title}</h1>
                         <p>developed by {details.companyName}</p>
                     </div>
-                    <div className='flex justify-between gap-5 my-6'>
+                    <div className='grid grid-cols-1 sm:grid-cols-3 gap-5 my-6'>
                         <div>
                             <FiDownload className='text-[#00D390] font-bold text-4xl' /><span>Downloads</span><h1 className='font-bold text-4xl'>
                                 {new Intl.NumberFormat('en-US', {
@@ -66,7 +66,7 @@ const AppDetails = () => {
                     </div>
                     <button onClick={() => handleInstall(details.id)}
                         disabled={isInstalled}
-                        className='btn bg-[#0ea978] text-white p-2 rounded disabled:opacity-50 disabled:cursor-not-allowed'>
+                        className='btn bg-[#0ea978] text-white p-2 rounded w-full sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed'>
                         Install Now ({details.size} MB)
                     </button>
                 </div>
