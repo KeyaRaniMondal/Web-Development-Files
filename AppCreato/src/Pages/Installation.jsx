@@ -21,10 +21,30 @@ const Installation = () => {
         toast.error('The app has been uninstalled successfully!');
         navigate('/apps');
     }
+
+    const handleSortBySize = (size) => {
+        const sorted = [...installedApps].sort((a, b) => {
+            if (size === 'small') {
+                return a.size - b.size;
+            }
+            else if (size === 'large') {
+                return b.size - a.size;
+            }
+        })
+        setInstalledApps(sorted)
+    }
     return (
         <div className='bg-[#f7f8f9] text-center justify-center py-10'>
             <h1 className='font-bold text-4xl '>Your Installed Apps</h1>
             <p className='text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
+            <div className='flex justify-between w-[1440px] mx-auto '>
+                <h1 className='font-semibold text-2xl'>{installedApps.length} Apps Found</h1>
+                <select defaultValue="Pick a font" className="select select-ghost border-1 " onChange={(e) => handleSortBySize(e.target.value)}>
+                    <option >Sort By Size</option>
+                    <option>small</option>
+                    <option>large</option>
+                </select>
+            </div>
             {
                 installedApps.length > 0 ? (
                     <div className='w-[1440px] mx-auto mt-10 gap-5'>
