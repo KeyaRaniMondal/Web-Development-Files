@@ -8,6 +8,7 @@ import { Link } from 'react-router';
 const Apps = ({ apps: appsProp }) => {
     const loaderApps = useLoaderData();
     const allApps = appsProp ?? loaderApps ?? [];
+    const isStandalonePage = appsProp == null;
     const [searchQuery, setSearchQuery] = useState('');
     const [apps, setApps] = useState(allApps);
 
@@ -27,30 +28,37 @@ const Apps = ({ apps: appsProp }) => {
 
     return (
         <div >
-            <div className='text-center justify-center mt-10'>
-                <h1 className='text-4xl font-bold '>Our All Applications</h1>
-                <p>Explore All Apps on the Market developed by us. We code for Millions</p>
-            </div>
+            {isStandalonePage && (
+                <div className='text-center justify-center mt-10'>
+                    <h1 className='text-4xl font-bold '>Our All Applications</h1>
+                    <p>Explore All Apps on the Market developed by us. We code for Millions</p>
+                </div>
+            )}
 
-            <div className='flex justify-between items-center mt-10 w-[1440px] mx-auto'>
-                <div className='font-semibold text-2xl'>
-                    ({apps.length}) Apps Found
-                </div>
-                <div>
-                    <div className='relative'>
-                        <input
-                            type="search"
-                            name="Apps"
-                            id=""
-                            placeholder="Search Apps..."
-                            value={searchQuery}
-                            onChange={handleSearch}
-                            className='border-1 rounded pl-10 pr-4 py-2'
-                        />
-                        <CiSearch className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400' />
+            {
+                isStandalonePage && loaderApps.length ? (
+                    <div className='flex justify-between items-center mt-10 w-[1440px] mx-auto'>
+                        <div className='font-semibold text-2xl'>
+                            ({apps.length}) Apps Found
+                        </div>
+                        <div>
+                            <div className='relative'>
+                                <input
+                                    type="search"
+                                    name="Apps"
+                                    id=""
+                                    placeholder="Search Apps..."
+                                    value={searchQuery}
+                                    onChange={handleSearch}
+                                    className='border-1 rounded pl-10 pr-4 py-2'
+                                />
+                                <CiSearch className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400' />
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                ) : (<div></div>)
+            }
+
 
             <div className='grid grid-cols-4 gap-5 bg-base-300 w-[1440px] mx-auto mt-10 mb-10'>
                 {

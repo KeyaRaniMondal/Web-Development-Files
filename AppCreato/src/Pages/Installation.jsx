@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useNavigate } from 'react-router';
 import { getAppsId, removeAppsId } from '../Components/localStorage';
 import { FiDownload } from 'react-icons/fi';
 import { FaStar } from 'react-icons/fa';
+import toast from 'react-hot-toast';
 
 const Installation = () => {
+    const navigate = useNavigate();
+
     const details = useLoaderData()
 
     const appsId = getAppsId();
@@ -12,10 +15,11 @@ const Installation = () => {
         details.filter(app => appsId.includes(app.id))
     );
 
-
     const handleUninstall = (id) => {
         removeAppsId(id);
         setInstalledApps((prev) => prev.filter(app => app.id !== id));
+        toast.error('The app has been uninstalled successfully!');
+        navigate('/apps');
     }
     return (
         <div className='bg-[#f7f8f9] text-center justify-center py-10'>
@@ -51,7 +55,8 @@ const Installation = () => {
 
                                 </div>
 
-                                <button onClick={() => handleUninstall(app.id)} className='btn bg-[#0ea978] h-10  text-white p-2 rounded'>Uninstall</button>
+                                <button onClick={() => handleUninstall(app.id)}
+                                    className='btn bg-[#0ea978] h-10  text-white p-2 rounded'>Uninstall</button>
                             </div>
                         ))}
                     </div>

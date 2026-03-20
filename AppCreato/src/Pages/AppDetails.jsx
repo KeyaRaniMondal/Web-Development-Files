@@ -1,14 +1,16 @@
-import React from 'react';
-import { useLoaderData } from 'react-router';
+import React, { useState } from 'react';
+import { useLoaderData, useNavigate } from 'react-router';
 import { FaStar } from 'react-icons/fa';
 import { FiDownload } from 'react-icons/fi';
 import { VscThumbsupFilled } from 'react-icons/vsc';
 import Chart from '../Components/Chart';
 import appError from '../assets/App-Error.png'
-import { addAppsId } from '../Components/localStorage';
+import { addAppsId, getAppsId } from '../Components/localStorage';
 import toast from 'react-hot-toast';
 
 const AppDetails = () => {
+    const navigate = useNavigate()
+
     const details = useLoaderData()
     // console.log(details)
     if (!details) {
@@ -25,9 +27,13 @@ const AppDetails = () => {
     }
 
 
-    const handleInstall=(id)=>{
+    const [isInstalled, setIsInstalled] = useState(() => getAppsId().includes(details?.id));
+
+    const handleInstall = (id) => {
         addAppsId(id);
+        setIsInstalled(true);
         toast.success('Successfully Added App for Installation!')
+        navigate('/installation')
     }
 
     return (
@@ -58,7 +64,11 @@ const AppDetails = () => {
                         </div>
 
                     </div>
-                    <button onClick={() => handleInstall(details.id)} className='btn bg-[#0ea978] text-white p-2 rounded'>Install Now ({details.size} MB)</button>
+                    <button onClick={() => handleInstall(details.id)}
+                        disabled={isInstalled}
+                        className='btn bg-[#0ea978] text-white p-2 rounded disabled:opacity-50 disabled:cursor-not-allowed'>
+                        Install Now ({details.size} MB)
+                    </button>
                 </div>
             </div>
 
