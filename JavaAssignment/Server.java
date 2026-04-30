@@ -14,6 +14,7 @@ public class Server {
             while (true) {
                 Socket socket = serverSocket.accept();
                 clientCount++;
+
                 String clientId = "Client" + clientCount;
                 System.out.println(clientId + " connected from " + socket.getInetAddress());
 
@@ -21,6 +22,7 @@ public class Server {
                 DataOutputStream dout = new DataOutputStream(socket.getOutputStream());
 
                 ClientHandler handler = new ClientHandler(socket, clientId, din, dout);
+
                 clients.add(handler);
                 new Thread(handler).start();
             }
@@ -30,17 +32,25 @@ public class Server {
         }
     }
 
-    static void broadcast(String message) {
+    // ✅ Broadcast to ALL except sender
+    static void broadcast(String message, ClientHandler sender) {
         synchronized (clients) {
             Iterator<ClientHandler> iterator = clients.iterator();
+
             while (iterator.hasNext()) {
                 ClientHandler client = iterator.next();
+
                 if (!client.isActive) {
                     iterator.remove();
                     continue;
                 }
+
+                // ❌ skip sender
+                if (client == sender) continue;
+
                 try {
                     client.dout.writeUTF(message);
+                    client.dout.flush();
                 } catch (IOException e) {
                     client.isActive = false;
                     iterator.remove();
@@ -49,7 +59,6 @@ public class Server {
         }
     }
 }
-
 class ClientHandler implements Runnable {
 
     Socket socket;
@@ -71,18 +80,29 @@ class ClientHandler implements Runnable {
     @Override
     public void run() {
         try {
+            // ✅ read username
             userName = din.readUTF();
-            Server.broadcast(userName + " joined the chat.");
+
+            // ✅ notify others (exclude sender)
+            Server.broadcast(userName + " joined the chat.", this);
 
             String received;
-            while (isActive && (received = din.readUTF()) != null) {
+
+            while (isActive) {
+                received = din.readUTF();
+
                 if (received.equalsIgnoreCase("exit")) {
                     isActive = false;
-                    Server.broadcast(userName + " left the chat.");
+
+                    // ✅ notify others
+                    Server.broadcast(userName + " left the chat.", this);
                     break;
                 }
-                Server.broadcast(userName + ": " + received);
+
+                // ✅ send message to others only
+                Server.broadcast(userName + ": " + received, this);
             }
+
         } catch (IOException e) {
             System.out.println(clientId + " error: " + e.getMessage());
         } finally {
@@ -93,8 +113,9 @@ class ClientHandler implements Runnable {
     private void close() {
         isActive = false;
         try {
-            socket.close();
-        } catch (IOException ignored) {
-        }
+            if (din != null) din.close();
+            if (dout != null) dout.close();
+            if (socket != null) socket.close();
+        } catch (IOException ignored) {}
     }
 }
