@@ -1,10 +1,12 @@
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Server {
 
-    static Vector<ClientHandler> clients = new Vector<>();
+    // ✅ Thread-safe list (better than Vector)
+    static List<ClientHandler> clients = new CopyOnWriteArrayList<>();
     static int clientCount = 0;
 
     public static void main(String[] args) {
@@ -15,15 +17,12 @@ public class Server {
                 Socket socket = serverSocket.accept();
                 clientCount++;
 
-                String clientId = "Client" + clientCount;
-                System.out.println(clientId + " connected from " + socket.getInetAddress());
-
                 DataInputStream din = new DataInputStream(socket.getInputStream());
                 DataOutputStream dout = new DataOutputStream(socket.getOutputStream());
 
-                ClientHandler handler = new ClientHandler(socket, clientId, din, dout);
-
+                ClientHandler handler = new ClientHandler(socket, din, dout);
                 clients.add(handler);
+
                 new Thread(handler).start();
             }
 
@@ -32,46 +31,32 @@ public class Server {
         }
     }
 
-    // ✅ Broadcast to ALL except sender
+    // ✅ Broadcast to all except sender
     static void broadcast(String message, ClientHandler sender) {
-        synchronized (clients) {
-            Iterator<ClientHandler> iterator = clients.iterator();
-
-            while (iterator.hasNext()) {
-                ClientHandler client = iterator.next();
-
-                if (!client.isActive) {
-                    iterator.remove();
-                    continue;
-                }
-
-                // ❌ skip sender
-                if (client == sender) continue;
-
+        for (ClientHandler client : clients) {
+            if (client != sender && client.isActive) {
                 try {
                     client.dout.writeUTF(message);
                     client.dout.flush();
                 } catch (IOException e) {
-                    client.isActive = false;
-                    iterator.remove();
+                    client.close();
                 }
             }
         }
     }
 }
+
+
 class ClientHandler implements Runnable {
 
-    Socket socket;
-    String clientId;
-    String userName;
+    private Socket socket;
+    private String userName;
     DataInputStream din;
     DataOutputStream dout;
     volatile boolean isActive;
 
-    public ClientHandler(Socket socket, String clientId,
-                         DataInputStream din, DataOutputStream dout) {
+    public ClientHandler(Socket socket, DataInputStream din, DataOutputStream dout) {
         this.socket = socket;
-        this.clientId = clientId;
         this.din = din;
         this.dout = dout;
         this.isActive = true;
@@ -80,42 +65,43 @@ class ClientHandler implements Runnable {
     @Override
     public void run() {
         try {
-            // ✅ read username
+            // ✅ Read username first
             userName = din.readUTF();
+            System.out.println(userName + " connected.");
 
-            // ✅ notify others (exclude sender)
-            Server.broadcast(userName + " joined the chat.", this);
+            Server.broadcast("🔵 " + userName + " joined the chat.", this);
 
-            String received;
+            String message;
 
             while (isActive) {
-                received = din.readUTF();
+                message = din.readUTF();
 
-                if (received.equalsIgnoreCase("exit")) {
-                    isActive = false;
-
-                    // ✅ notify others
-                    Server.broadcast(userName + " left the chat.", this);
+                if (message.equalsIgnoreCase("exit")) {
+                    Server.broadcast("🔴 " + userName + " left the chat.", this);
                     break;
                 }
 
-                // ✅ send message to others only
-                Server.broadcast(userName + ": " + received, this);
+                Server.broadcast(userName + ": " + message, this);
             }
 
         } catch (IOException e) {
-            System.out.println(clientId + " error: " + e.getMessage());
+            System.out.println(userName + " disconnected unexpectedly.");
         } finally {
             close();
         }
     }
 
-    private void close() {
+    // ✅ Clean removal + resource cleanup
+    public void close() {
         isActive = false;
+        Server.clients.remove(this);   // 🔥 immediate removal
+
         try {
             if (din != null) din.close();
             if (dout != null) dout.close();
             if (socket != null) socket.close();
         } catch (IOException ignored) {}
+
+        System.out.println(userName + " connection closed.");
     }
 }
