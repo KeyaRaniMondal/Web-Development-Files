@@ -101,3 +101,108 @@ select * from customers where email like '%.com' and country in('USA','UK')
 select upper(concat(customer_first_name,' ',last_name)) as full_name,email,lower(city) from customers where country='USA' or country='UK'
 -- 10 Find the total revenue, average order amount, maximum order amount, andminimum order amount from all orders placed in June 2023.
 select sum(total_amount),avg(total_amount),max(total_amount),min(total_amount) from orders where order_date between '2023-06-01' and '2023-06-30'
+
+
+
+
+
+
+
+
+create database prect;
+use prect
+
+
+CREATE TABLE Department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50)
+);
+
+CREATE TABLE Employee (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50),
+    salary DECIMAL(10,2),
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERENCES Department(dept_id)
+);
+
+CREATE TABLE Project (
+    project_id INT PRIMARY KEY,
+    project_name VARCHAR(50)
+);
+
+CREATE TABLE Employee_Project (
+    emp_id INT,
+    project_id INT,
+    hours_worked INT,
+    PRIMARY KEY (emp_id, project_id),
+    FOREIGN KEY (emp_id) REFERENCES Employee(emp_id),
+    FOREIGN KEY (project_id) REFERENCES Project(project_id)
+);
+
+
+INSERT INTO Department VALUES
+(1, 'IT'),
+(2, 'HR'),
+(3, 'Finance'),
+(4, 'Marketing');
+
+INSERT INTO Employee VALUES
+(101, 'Alice', 60000, 1),
+(102, 'Bob', 55000, 1),
+(103, 'Carol', 50000, 2),
+(104, 'David', 70000, 3),
+(105, 'Eva', 45000, 4);
+
+INSERT INTO Project VALUES
+(201, 'Website Development'),
+(202, 'Recruitment System'),
+(203, 'Payroll System'),
+(204, 'Marketing Campaign');
+
+INSERT INTO Employee_Project VALUES
+(101, 201, 120),
+(102, 201, 80),
+(103, 202, 60),
+(104, 203, 100),
+(105, 204, 90);
+
+--Question: Show employee names along with department names.
+select e.emp_name,d.dept_name from Employee e join Department d on e.dept_id=d.dept_id
+--Display employee name, project name, and hours worked.
+select e.emp_name,p.project_name,ep.hours_worked from Employee e join Employee_Project ep on e.emp_id=ep.emp_id
+join Project p on p.project_id= ep.project_id
+--Find total salary of each department.
+select d.dept_name,sum(e.salary) as total_sal from Employee e join Department d on e.dept_id=d.dept_id
+group by d.dept_name 
+--Find employees who worked more than 80 hours.
+select e.emp_name,ep.hours_worked from Employee e join Employee_Project ep on e.emp_id=ep.emp_id
+where ep.hours_worked>80
+--Count employees in each department.
+select count(e.emp_id),d.dept_name from Employee e join Department d on e.dept_id=d.dept_id 
+group by d.dept_name
+--Create a procedure to show employees of a department.
+drop proc empProc
+create proc empProc
+(@dept varchar(20))
+as
+begin
+select e.salary,d.dept_name from Employee e join Department d on e.dept_id=d.dept_id 
+where d.dept_name=@dept
+end
+exec empProc'HR'
+
+--Create a function to calculate a 10% bonus
+CREATE FUNCTION calBonus(@salary FLOAT)
+RETURNS FLOAT
+AS
+BEGIN
+    DECLARE @bonus FLOAT
+
+    SET @bonus = @salary * 0.01
+
+    RETURN @bonus
+END
+select emp_name, dbo.calBonus(salary) from Employee
+--Show employee name, department, salary and bonus.
+select e.emp_name,d.dept_name,e.salary,dbo.calBonus(e.salary) from Employee e join Department d on e.dept_id=d.dept_id
