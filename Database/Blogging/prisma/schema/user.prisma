@@ -1,0 +1,12 @@
+model user{
+    id String @db.Varchar(255)
+email String @unique
+password String
+activestatus ActiveStatus @default(ACTIVE)
+role Role @default(USER)
+createdAt DateTime @default(now())
+updatedAt DateTime @updatedAt
+profile Profile?
+
+@@map("users")
+}
