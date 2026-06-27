@@ -3,6 +3,7 @@ import {Request, Response} from "express"
 import cors from "cors"
 import cookieParser from "cookie-parser"
 import { userRoutes } from "./modules/user/user.route"
+import { AuthRoutes } from "./modules/auth/auth.route"
 const app:Application =express()
 
 //middlewares
@@ -21,6 +22,7 @@ app.get("/",(req:Request, res:Response)=>{
     res.send("Hello World")
 })
 //user post route
-app.post("/api/users/register", userRoutes)
+app.use("/api/users", userRoutes)
+app.use('/api/auth',AuthRoutes)
 
 export default app
