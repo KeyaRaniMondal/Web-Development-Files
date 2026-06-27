@@ -1,35 +1,77 @@
-import {prisma} from '../../lib/prisma';
-import bcrypt from 'bcryptjs';
-import { LoginUserPayload, AuthTokens, JwtPayload } from './auth.interface';
+import bcrypt from "bcryptjs";
+import { SignOptions } from "jsonwebtoken";
+import config from "../../config";
+import { prisma } from "../../lib/prisma";
+import  {jwtUtils}  from "../../utils/jwt";
+import { ILoginUser } from "./auth.interface";
 
+const loginUser = async (payload : ILoginUser) => {
+    const { email, password } = payload;
 
-const loginUserFromDB = async (payload: LoginUserPayload)=> {
-    // 1. Check if the user exists in the database
-    const userData = await prisma.user.findUnique({
-        where: {
-            email: payload.email,
-        },
-    });
+    // const user = await prisma.user.findUnique({
+    //     where : {email}
+    // })
 
-    if (!userData) {
-        throw new Error('User does not exist!');
+    // if(!user){
+    //     throw new Error("User not found");
+    // }
+
+    const user = await prisma.user.findUniqueOrThrow({
+        where : {email}
+    })
+
+    if (user.activeStatus === "BLOCKED") {
+        throw new Error("Your account has been blocked. Please contact support.");
     }
 
-    // 2. Verify if the password matches the hashed password
-    const isPasswordMatched = await bcrypt.compare(payload.password, userData.password);
+    const isPasswordMatched = await bcrypt.compare(password, user.password);
 
-    if (!isPasswordMatched) {
-        throw new Error('Password incorrect!');
+    if(!isPasswordMatched){
+        throw new Error("Password is incorrect");
     }
 
-    // 3. Create Access Token
     const jwtPayload = {
-        email: userData.email,
-        role: userData.role, // Assuming a 'role' field exists in your Prisma schema
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        role: user.role
+    }
+
+    // const accessToken = jwt.sign(
+    //     jwtPayload, 
+    //     config.jwt_access_secret, 
+    //     {
+    //         expiresIn : config.jwt_access_expires_in
+    //     } as SignOptions
+    // )
+
+    const accessToken = jwtUtils.createToken(
+        jwtPayload,
+        config.JWT_ACCESS_SECRET='',
+        config.JWT_ACCESS_EXPIRES_IN as SignOptions
+    );
+
+    // const refreshToken = jwt.sign(
+    //     jwtPayload, 
+    //     config.jwt_refresh_secret, 
+    //     {
+    //         expiresIn : config.jwt_refresh_expires_in
+    //     } as SignOptions
+    // );
+
+    const refreshToken = jwtUtils.createToken(
+        jwtPayload,
+        config.JWT_REFRESH_SECRET='',
+        config.JWT_REFRESH_EXPIRES_IN as SignOptions
+    );
+
+    return {
+        accessToken,
+        refreshToken
     };
+}
 
-};
 
-export const AuthServices = {
-    loginUserFromDB,
-};
+export const authService = {
+    loginUser
+}
